@@ -1,0 +1,1914 @@
+<templateSet group="jquery">
+  <template name="jq-add" value="    $var1$.add('$var2$')&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;selector expression&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-addClass" value="    $var1$.addClass('$var2$')&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;class name&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-after" value="    $var1$.after('$var2$')&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;Some text &lt;b&gt;and bold!&lt;/b&gt;&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-ajax" value="    $.ajax({&#10;        url: '$var1$',&#10;        type: '$var2$',&#10;        dataType: '$var3$',&#10;        data: $.param( $('$var4$') ),&#10;        complete: function (jqXHR, textStatus) {&#10;            $var5$&#10;        },&#10;        success: function (data, textStatus, jqXHR) {&#10;            $var6$&#10;        },&#10;        error: function (jqXHR, textStatus, errorThrown) {&#10;            $var0$&#10;        }&#10;    });&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;mydomain.com/url&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;POST&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;xml/html/script/json&quot;" alwaysStopAt="true"/>
+    <variable name="var4" expression="" defaultValue="&quot;Element or Expression&quot;" alwaysStopAt="true"/>
+    <variable name="var5" expression="" defaultValue="&quot;// callback&quot;" alwaysStopAt="true"/>
+    <variable name="var6" expression="" defaultValue="&quot;// success callback&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;// error callback&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-ajaxcomplete" value="    $var1$.ajaxComplete(function ($var1$, xhr, settings) {&#10;        $var0$&#10;    });&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;e&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;// callback&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-ajaxerror" value="    $var1$.ajaxError(function ($var1$, xhr, settings, thrownError) {&#10;        $var2$&#10;    });&#10;    $END$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;e&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;// error callback&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-ajaxget" value="    $.get('$var1$',&#10;        $var2$,}&#10;        function (data, textStatus, jqXHR) {&#10;            $var0$&#10;        }&#10;    );&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;mydomain.com/url&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;{ param1: value1 &quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;// success callback&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-ajaxpost" value="    $.post('$var1$',&#10;        $var2$,}&#10;        function (data, textStatus, jqXHR) {&#10;            $var0$&#10;        }&#10;    );&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;mydomain.com/url&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;{ param1: value1 &quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;// success callback&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-ajaxprefilter" value="    $.ajaxPrefilter(function ($var1$, $var2$, jqXHR) {&#10;        $var0$&#10;    });&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;options&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;originalOptions&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot; // Modify options, control originalOptions, store jqXHR, etc&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-ajaxsend" value="    $var1$.ajaxSend(function ($var1$) {&#10;        $var2$&#10;    });&#10;    $END$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;request, settings&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;// error callback&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-ajaxsetup" value="    $.ajaxSetup({&#10;        url: &quot;$var1$&quot;,&#10;        type: &quot;$var2$&quot;,&#10;        dataType: &quot;$var3$&quot;,&#10;        data: $.param( $(&quot;$var4$&quot;) ),&#10;        complete: function (jqXHR, textStatus) {&#10;            $var5$&#10;        },&#10;        success: function (data, textStatus, jqXHR) {&#10;            $var6$&#10;        },&#10;        error: function (jqXHR, textStatus, errorThrown) {&#10;            $var0$&#10;        }&#10;    });&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;mydomain.com/url&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;POST&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;xml/html/script/json&quot;" alwaysStopAt="true"/>
+    <variable name="var4" expression="" defaultValue="&quot;Element or Expression&quot;" alwaysStopAt="true"/>
+    <variable name="var5" expression="" defaultValue="&quot;// callback&quot;" alwaysStopAt="true"/>
+    <variable name="var6" expression="" defaultValue="&quot;// success callback&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;// error callback&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-ajaxstart" value="    $.ajaxStart(function () {&#10;        $var1$;&#10;    });&#10;    $END$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;// handler for when an AJAX call is started and no other AJAX calls are in progress&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-ajaxstop" value="    $.ajaxStop(function () {&#10;        $var1$;&#10;    });&#10;    $END$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;// handler for when all AJAX calls have been completed&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-ajaxsuccess" value="    $.ajaxSuccess(function ($var1$, xhr, settings) {&#10;        $var2$;&#10;    });&#10;    $END$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;e&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;// handler for when any AJAX call is successfully completed&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-andself" value="    $var1$.andSelf()&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-animate" value="    $var1$.animate({$var2$}, $var3$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;param1: value1, param2: value2&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;speed&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-append" value="    $var1$.append('$var2$')&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;Some text &lt;b&gt;and bold!&lt;/b&gt;&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-appendTo" value="    $var1$.appendTo('$var2$')&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;selector expression&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-attr" value="    $var1$.attr('$var2$', '$var3$')&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;attribute&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;value&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-attrm" value="    $var1$.attr({'$var2$': '$var3$', '$var4$': '$var5$'})&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;attr1&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;value1&quot;" alwaysStopAt="true"/>
+    <variable name="var4" expression="" defaultValue="&quot;attr2&quot;" alwaysStopAt="true"/>
+    <variable name="var5" expression="" defaultValue="&quot;value2&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-before" value="    $var1$.before('$var2$')&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;Some text &lt;b&gt;and bold!&lt;/b&gt;&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-bind" value="    $var1$.bind('$var2$', function ($var3$) {&#10;        $var0$&#10;    });&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;event name&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;e&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;// event handler&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-blur" value="    $var1$.blur(function ($var2$) {&#10;        $var0$&#10;    });&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;e&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;// event handler&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-C" value="    $.Callbacks()&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-Cadd" value="    $var1$.add($var2$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;callbacks&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;callbacks&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-Cdis" value="    $var1$.disable()&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;callbacks&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-Cempty" value="    $var1$.empty()&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;callbacks&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-Cfire" value="    $var1$.fire($var2$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;callbacks&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;args&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-Cfired" value="    $var1$.fired()&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;callbacks&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-Cfirew" value="    $var1$.fireWith($var2$, $var3$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;callbacks&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;this&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;args&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-Chas" value="    $var1$.has($var2$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;callbacks&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;callback&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-Clock" value="    $var1$.lock()&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;callbacks&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-Clocked" value="    $var1$.locked()&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;callbacks&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-Crem" value="    $var1$.remove($var2$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;callbacks&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;callbacks&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-change" value="    $var1$.change(function ($var2$) {&#10;        $var0$&#10;    });&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;e&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;// event handler&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-children" value="    $var1$.children('$var2$')&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;selector expression&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-clearq" value="    $var1$.clearQueue($var2$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;'queue name'&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-click" value="    $var1$.click(function ($var2$) {&#10;        $var0$&#10;    });&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;e&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;// event handler&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-clone" value="    $var1$.clone()&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-contains" value="    $.contains($var1$, $var0$);&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;container&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;contents&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-css" value="    $var1$.css('$var2$', '$var3$')&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;attribute&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;value&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-csshooks" value="    $.cssHooks['$var1$'] = {&#10;        get: function (elem, computed, extra) {&#10;            $var2$&#10;        },&#10;        set: function (elem, value) {&#10;            $var0$&#10;        }&#10;    };&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;CSS prop&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot; // handle getting the CSS property&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot; // handle setting the CSS value&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-cssm" value="    $var1$.css({$var2$: '$var3$', $var4$: '$var5$'})&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;attribute1&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;value1&quot;" alwaysStopAt="true"/>
+    <variable name="var4" expression="" defaultValue="&quot;attribute2&quot;" alwaysStopAt="true"/>
+    <variable name="var5" expression="" defaultValue="&quot;value2&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-D" value="    $.Deferred()&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-Dalways" value="    $var1$.always($var2$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;deferred&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;callbacks&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-Ddone" value="    $var1$.done($var2$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;deferred&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;callbacks&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-Dfail" value="    $var1$.fail($var2$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;deferred&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;callbacks&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-Disrej" value="    $var1$.isRejected()&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;deferred&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-Disres" value="    $var1$.isResolved()&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;deferred&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-Dnotify" value="    $var1$.notify($var2$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;deferred&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;args&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-Dnotifyw" value="    $var1$.notifyWith($var2$, $var3$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;deferred&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;this&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;args&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-Dpipe" value="    $var1$.then($var2$, $var3$, $var4$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;deferred&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;doneFilter&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;failFilter&quot;" alwaysStopAt="true"/>
+    <variable name="var4" expression="" defaultValue="&quot;progressFilter&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-Dprog" value="    $var1$.progress($var2$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;deferred&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;callbacks&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-Dprom" value="    $var1$.promise($var2$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;deferred&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;target&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-Drej" value="    $var1$.reject($var2$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;deferred&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;args&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-Drejw" value="    $var1$.rejectWith($var2$, $var3$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;deferred&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;this&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;args&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-Dres" value="    $var1$.resolve($var2$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;deferred&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;args&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-Dresw" value="    $var1$.resolveWith($var2$, $var3$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;deferred&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;this&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;args&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-Dstate" value="    $var1$.state()&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;deferred&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-Dthen" value="    $var1$.then($var2$, $var3$, $var4$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;deferred&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;doneCallbacks&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;failCallbacks&quot;" alwaysStopAt="true"/>
+    <variable name="var4" expression="" defaultValue="&quot;progressCallbacks&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-Dwhen" value="    $.when($var1$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;deferreds&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-data" value="    $var1$.data($var2$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-dataa" value="    $.data('$var1$', '$var2$'$var3$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;selector expression&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;key&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;, 'value'&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-dblclick" value="    $var1$.dblclick(function ($var2$) {&#10;        $var0$&#10;    });&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;e&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;// event handler&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-delay" value="    $var1$.delay('$var2$'$var3$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;slow/400/fast&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;, 'queue name'&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-dele" value="    $var1$.delegate('$var2$', '$var3$', function ($var4$) {&#10;        $var0$&#10;    });&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;selector expression&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;event name&quot;" alwaysStopAt="true"/>
+    <variable name="var4" expression="" defaultValue="&quot;e&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;// event handler&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-deq" value="    $var1$.dequeue($var2$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;'queue name'&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-deqq" value="    $.dequeue('$var1$'$var2$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;selector expression&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;, 'queue name'&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-detach" value="    $var1$.detach('$var2$')&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;selector expression&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-die" value="    $var1$.die($var2$, $var3$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;event&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;handler&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-each" value="    $var1$.each(function (index) {&#10;        $var0$&#10;    });&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;this.innerHTML = this + \&quot; is the element, \&quot; + index + \&quot; is the position\&quot;;&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-el" value="    $('&lt;$var1$/&gt;'$var2$})&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;, {&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-eltrim" value="    $.trim('$var1$')&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;string&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-empty" value="    $var1$.empty()&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-end" value="    $var1$.end()&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-eq" value="    $var1$.eq($var2$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;element index&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-error" value="    $var1$.error(function ($var2$) {&#10;        $var0$&#10;    });&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;e&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;// event handler&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-eventsmap" value="    {&#10;        :f$END$&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-extend" value="    $.extend($var1$$var2$, $var3$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;true, &quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;target&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-fadein" value="    $var1$.fadeIn('$var2$')&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;slow/400/fast&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-fadeinc" value="    $var1$.fadeIn('slow/400/fast', function () {&#10;        $var0$;&#10;    });&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;// callback&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-fadeout" value="    $var1$.fadeOut('$var2$')&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;slow/400/fast&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-fadeoutc" value="    $var1$.fadeOut('slow/400/fast', function () {&#10;        $var0$;&#10;    });&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;// callback&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-fadeto" value="    $var1$.fadeTo('$var2$', $var3$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;slow/400/fast&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;0.5&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-fadetoc" value="    $var1$.fadeTo('slow/400/fast', $var2$, function () {&#10;        $var0$;&#10;    });&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;0.5&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;// callback&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-filter" value="    $var1$.filter('$var2$')&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;selector expression&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-filtert" value="    $var1$.filter(function ($var2$) {&#10;        $var3$&#10;    })&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;index&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-find" value="    $var1$.find('$var2$')&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;selector expression&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-focus" value="    $var1$.focus(function ($var2$) {&#10;        $var0$&#10;    });&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;e&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;// event handler&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-focusin" value="    $var1$.focusIn(function ($var2$) {&#10;        $var0$&#10;    });&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;e&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;// event handler&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-focusout" value="    $var1$.focusOut(function ($var2$) {&#10;        $var0$&#10;    });&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;e&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;// event handler&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-get" value="    $var1$.get($var2$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;element index&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-getjson" value="    $.getJSON('$var1$',&#10;        $var2$,}&#10;        function (data, textStatus, jqXHR) {&#10;            $var0$&#10;        }&#10;    );&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;mydomain.com/url&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;{ param1: value1 &quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;// success callback&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-getscript" value="    $.getScript('$var1$', function (script, textStatus, jqXHR) {&#10;        $var0$&#10;    });&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;mydomain.com/url&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;// callback&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-grep" value="    $.grep($var1$, function (item, index) {&#10;        $var2$&#10;    }$var0$);&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;array&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;, true&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-hasc" value="    $var1$.hasClass('$var2$')&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;className&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-hasd" value="    $.hasData('$var0$');&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var0" expression="" defaultValue="&quot;selector expression&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-height" value="    $var1$.height($var2$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;integer&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-hide" value="    $var1$.hide('$var2$')&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;slow/400/fast&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-hidec" value="    $var1$.hide('$var2$', function () {&#10;        $var0$&#10;    });&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;slow/400/fast&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;// callback&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-hover" value="    $var1$.hover(function ($var2$) {&#10;        $var3$&#10;    }, function ($var2$) {&#10;        $var4$&#10;    });&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;e&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;// event handler&quot;" alwaysStopAt="true"/>
+    <variable name="var4" expression="" defaultValue="&quot;// event handler&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-html" value="    $var1$.html('$var2$')&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;Some text &lt;b&gt;and bold!&lt;/b&gt;&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-inarr" value="    $.inArray($var1$, $var0$);&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;value&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;array&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-insa" value="    $var1$.insertAfter('$var2$')&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;selector expression&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-insb" value="    $var1$.insertBefore('$var2$')&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;selector expression&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-is" value="    $var1$.is('$var2$')&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;selector expression&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-isarr" value="    $.isArray($var1$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-isempty" value="    $.isEmptyObject($var1$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-isfunc" value="    $.isFunction($var1$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-isnum" value="    $.isNumeric($var1$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;value&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-isobj" value="    $.isPlainObject($var1$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-iswin" value="    $.isWindow($var1$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-isxml" value="    $.isXMLDoc($var1$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;node&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-jj" value="    $('$var1$')&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;selector&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-kdown" value="    $var1$.keydown(function ($var2$) {&#10;        $var0$&#10;    });&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;e&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;// event handler&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-kpress" value="    $var1$.keypress(function ($var2$) {&#10;        $var0$&#10;    });&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;e&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;// event handler&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-kup" value="    $var1$.keyup(function ($var2$) {&#10;        $var0$&#10;    });&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;e&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;// event handler&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-last" value="    $var1$.last('$var1$')&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;selector expression&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-live" value="    $var1$.live('$var2$', function ($var3$) {&#10;        $var0$&#10;    });&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;events&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;e&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;// event handler&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-load" value="    $var1$.load(function ($var2$) {&#10;        $var0$&#10;    });&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;e&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;// event handler&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-loadf" value="    $var1$.load('$var2$',&#10;        $var2$,}&#10;        function (responseText, textStatus, xhr) {&#10;            $var0$&#10;        }&#10;    });&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;{ param1: value1 &quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;// success callback&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-makearray" value="    $.makeArray($var0$);&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var0" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-map" value="    $var1$.map(function ($var2$, $var3$) {&#10;        $var0$&#10;    });&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;index&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;element&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;// callback&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-mapp" value="    $.map($var1$, function ($var2$, $var3$) {&#10;        $var0$&#10;    });&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;arrayOrObject&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;value&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;indexOrKey&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;// callback&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-merge" value="    $.merge($var1$, $var0$);&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;target&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;original&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-mdown" value="    $var1$.mousedown(function ($var2$) {&#10;        $var0$&#10;    });&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;e&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;// event handler&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-menter" value="    $var1$.mouseenter(function ($var2$) {&#10;        $var0$&#10;    });&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;e&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;// event handler&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-mleave" value="    $var1$.mouseleave(function ($var2$) {&#10;        $var0$&#10;    });&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;e&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;// event handler&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-mmove" value="    $var1$.mousemove(function ($var2$) {&#10;        $var0$&#10;    });&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;e&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;// event handler&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-mout" value="    $var1$.mouseout(function ($var2$) {&#10;        $var0$&#10;    });&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;e&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;// event handler&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-mover" value="    $var1$.mouseover(function ($var2$) {&#10;        $var0$&#10;    });&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;e&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;// event handler&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-mup" value="    $var1$.mouseup(function ($var2$) {&#10;        $var0$&#10;    });&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;e&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;// event handler&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-next" value="    $var1$.next('$var2$')&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;selector expression&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-nexta" value="    $var1$.nextAll('$var2$')&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;selector expression&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-nextu" value="    $var1$.nextUntil('$var2$'$var3$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;selector expression&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;, 'filter expression'&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-not" value="    $var1$.not('$var2$')&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;selector expression&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-off" value="    $var1$.off('$var2$', '$var3$'$var4$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;events&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;selector expression&quot;" alwaysStopAt="true"/>
+    <variable name="var4" expression="" defaultValue="&quot;, handler&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-offset" value="    $var1$.offset()&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-offsetp" value="    $var1$.offsetParent()&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-on" value="    $var1$.on('$var2$', '$var3$', function ($var4$) {&#10;        $var0$&#10;    });&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;events&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;selector expression&quot;" alwaysStopAt="true"/>
+    <variable name="var4" expression="" defaultValue="&quot;e&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;// event handler&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-one" value="    $var1$.one('$var2$', function ($var3$) {&#10;        $var0$&#10;    });&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;event name&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;e&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;// event handler&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-outerh" value="    $var1$.outerHeight()&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-outerw" value="    $var1$.outerWidth()&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-param" value="    $.param($var1$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-parent" value="    $var1$.parent('$var2$')&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;selector expression&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-parents" value="    $var1$.parents('$var2$')&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;selector expression&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-parentsu" value="    $var1$.parentsUntil('$var2$'$var3$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;selector expression&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;, 'filter expression'&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-parsejson" value="    $.parseJSON($var1$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;data&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-parsexml" value="    $.parseXML($var1$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;data&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-pos" value="    $var1$.position()&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-prepend" value="    $var1$.prepend('$var2$')&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;Some text &lt;b&gt;and bold!&lt;/b&gt;&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-prependto" value="    $var1$.prependTo('$var2$')&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;selector expression&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-prev" value="    $var1$.prev('$var2$')&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;selector expression&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-preva" value="    $var1$.prevAll('$var2$')&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;selector expression&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-prevu" value="    $var1$.prevUntil('$var2$'$var3$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;selector expression&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;, 'filter expression'&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-promise" value="    $var1$.promise($var2$, $var3$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;'fx'&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;target&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-prop" value="    $var1$.prop('$var2$')&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;property name&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-proxy" value="    $.proxy($var1$, $var2$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;function&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;this&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-pushstack" value="    $var1$.pushStack($var2$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;elements&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-queue" value="    $var1$.queue($var2$$var3$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;, newQueue&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-queuee" value="    $.queue($var1$$var2$$var3$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;element&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;, name&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;, newQueue&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-ready" value="    $(function () {&#10;        $END$&#10;    });&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-rem" value="    $var1$.remove()&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-rema" value="    $var1$.removeAttr('$var2$')&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;attribute name&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-remc" value="    $var1$.removeClass('$var2$')&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;class name&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-remd" value="    $var1$.removeData('$var2$')&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;key name&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-remdd" value="    $.removeData($var1$$var2$')&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;element&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;, 'key name&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-remp" value="    $var1$.removeProp('$var2$')&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;property name&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-repa" value="    $var1$.replaceAll($var2$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;target&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-repw" value="    $var1$.replaceWith($var2$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;content&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-reset" value="    $var1$.reset(function ($var2$) {&#10;        $var0$&#10;    });&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;e&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;// event handler&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-resize" value="    $var1$.resize(function ($var2$) {&#10;        $var0$&#10;    });&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;e&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;// event handler&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-scroll" value="    $var1$.scroll(function ($var2$) {&#10;        $var0$&#10;    });&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;e&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;// event handler&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-scrolll" value="    $var1$.scrollLeft($var2$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;value&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-scrollt" value="    $var1$.scrollTop($var2$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;value&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-sdown" value="    $var1$.slideDown('$var2$')&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;slow/400/fast&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-sdownc" value="    $var1$.slideDown('$var2$', function () {&#10;        $var0$;&#10;    });&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;slow/400/fast&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;// callback&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-select" value="    $var1$.select(function ($var2$) {&#10;        $var0$&#10;    });&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;e&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;// event handler&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-serialize" value="    $var1$.serialize()&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-serializea" value="    $var1$.serializeArray()&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-show" value="    $var1$.show('$var2$')&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;slow/400/fast&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-showc" value="    $var1$.show('$var2$', function () {&#10;        $var0$&#10;    });&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;slow/400/fast&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;// callback&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-sib" value="    $var1$.siblings('$var2$')&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;selector expression&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-size" value="    $var1$.size()&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-slice" value="    $var1$.slice($var2$$var3$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;start&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;, end&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-stoggle" value="    $var1$.slideToggle('$var2$')&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;slow/400/fast&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-stop" value="    $var1$.stop('$var2$', $var3$, $var4$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;queue&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;false&quot;" alwaysStopAt="true"/>
+    <variable name="var4" expression="" defaultValue="&quot;false&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-submit" value="    $var1$.submit(function ($var2$) {&#10;        $var0$&#10;    });&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;e&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;// event handler&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-sup" value="    $var1$.slideUp('$var2$')&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;slow/400/fast&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-supc" value="    $var1$.slideUp('$var2$', function () {&#10;        $var0$;&#10;    });&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;slow/400/fast&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;// callback&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-text" value="    $var1$.text($var2$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;'some text'&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-this" value="    $(this)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-toarr" value="    $var0$.toArray()&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var0" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-tog" value="    $var1$.toggle(function ($var2$) {&#10;        $var3$&#10;    }, function ($var2$) {&#10;        $var4$&#10;    });&#10;    $END$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;e&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;// event handler&quot;" alwaysStopAt="true"/>
+    <variable name="var4" expression="" defaultValue="&quot;// event handler&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-togclass" value="    $var1$.toggleClass('$var2$')&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;class name&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-togsh" value="    $var1$.toggle('$var2$')&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;slow/400/fast&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-trig" value="    $var1$.trigger('$var2$')&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;event name&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-trigh" value="    $var1$.triggerHandler('$var2$')&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;event name&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-$trim" value="    $.trim($var1$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;str&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-$type" value="    $.type($var1$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-unbind" value="    $var1$.unbind('$var2$')&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;event name&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-undele" value="    $var1$.undelegate($var2$, $var3$, $var4$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;selector expression&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;event&quot;" alwaysStopAt="true"/>
+    <variable name="var4" expression="" defaultValue="&quot;handler&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-uniq" value="    $.unique($var1$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;array&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-unload" value="    $var1$.unload(function ($var2$) {&#10;        $var0$&#10;    });&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;e&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;// event handler&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-unwrap" value="    $var1$.unwrap()&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-val" value="    $var1$.val('$var2$')&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;text&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="jq-width" value="    $var1$.width($var2$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;integer&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+</templateSet>

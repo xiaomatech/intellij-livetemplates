@@ -1,0 +1,801 @@
+<templateSet group="javascript2">
+  <template name="js-sim" value="    $var1$static int Main(string[] args) {&#10;        $END$&#10;        return 0;&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;public &quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-simc" value="    public class Application {&#10;        $var1$static int Main(string[] args) {&#10;            $END$&#10;            return 0;&#10;        }&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;public &quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-svm" value="    $var1$static void Main(string[] args) {&#10;        $END$&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;public &quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-if" value="    if ($var1$) {&#10;        $END$&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;true&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-el" value="    else {&#10;        $END$&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-ifs" value="    if ($var1$)&#10;        $END$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-t" value="    $var1$ ? $var2$ : $END$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-?" value="    $var1$ ? $var2$ : $END$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-do" value="    do {&#10;        $END$&#10;    } while ($var1$);&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;true&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-wh" value="    while ($var1$) {&#10;        $END$&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;true&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-for" value="    for (int $var1$ = 0; $var1$ &lt; $var2$; $var1$$var3$) {&#10;        $END$&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;i&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;count&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;++&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-forr" value="    for (int $var1$ = $var2$; $var1$ &gt;= 0; $var1$--) {&#10;        $END$&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;i&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;length&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-fore" value="    foreach ($var1$ $var2$ in $var3$) {&#10;        $END$&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;var&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;entry&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-foreach" value="    foreach ($var1$ $var2$ in $var3$) {&#10;        $END$&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;var&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;entry&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-each" value="    foreach ($var1$ $var2$ in $var3$) {&#10;        $END$&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;var&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;entry&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-prop" value="    $var1$ $var2$ $var3$ { get; set; }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;public&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;int&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-p" value="    $var1$ $var2$ $var3$ { get; set; }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;public&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;int&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-p+" value="    public $var1$ $var2$ { get; set; }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;int&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-p+&amp;" value="    public $var1$ $var2$ { get; internal set; }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;int&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-p+|" value="    public $var1$ $var2$ { get; protected set; }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;int&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-p+-" value="    public $var1$ $var2$ { get; private set; }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;int&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-p&amp;" value="    internal $var1$ $var2$ { get; set; }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;int&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-p&amp;|" value="    internal $var1$ $var2$ { get; protected set; }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;int&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-p&amp;-" value="    internal $var1$ $var2$ { get; private set; }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;int&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-p|" value="    protected $var1$ $var2$ { get; set; }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;int&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-p|-" value="    protected $var1$ $var2$ { get; private set; }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;int&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-p-" value="    private $var1$ $var2$ { get; set; }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;int&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-pi" value="    $var1$ int $var2$ { get; set; }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;public&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-pi+" value="    public int $var1$ { get; set; }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-pi+&amp;" value="    public int $var1$ { get; internal set; }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-pi+|" value="    public int $var1$ { get; protected set; }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-pi+-" value="    public int $var1$ { get; private set; }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-pi&amp;" value="    internal int $var1$ { get; set; }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-pi&amp;|" value="    internal int $var1$ { get; protected set; }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-pi&amp;-" value="    internal int $var1$ { get; private set; }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-pi|" value="    protected int $var1$ { get; set; }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-pi|-" value="    protected int $var1$ { get; private set; }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-pi-" value="    private int $var1$ { get; set; }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-pb" value="    $var1$ bool $var2$ { get; set; }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;public&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-pb+" value="    public bool $var1$ { get; set; }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-pb+&amp;" value="    public bool $var1$ { get; internal set; }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-pb+|" value="    public bool $var1$ { get; protected set; }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-pb+-" value="    public bool $var1$ { get; private set; }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-pb&amp;" value="    internal bool $var1$ { get; set; }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-pb&amp;|" value="    internal bool $var1$ { get; protected set; }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-pb&amp;-" value="    internal bool $var1$ { get; private set; }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-pb|" value="    protected bool $var1$ { get; set; }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-pb|-" value="    protected bool $var1$ { get; private set; }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-pb-" value="    private bool $var1$ { get; set; }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-ps" value="    $var1$ string $var2$ { get; set; }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;public&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-ps+" value="    public string $var1$ { get; set; }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-ps+&amp;" value="    public string $var1$ { get; internal set; }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-ps+|" value="    public string $var1$ { get; protected set; }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-ps+-" value="    public string $var1$ { get; private set; }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-ps&amp;" value="    internal string $var1$ { get; set; }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-ps&amp;|" value="    internal string $var1$ { get; protected set; }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-ps&amp;-" value="    internal string $var1$ { get; private set; }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-ps|" value="    protected string $var1$ { get; set; }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-ps|-" value="    protected string $var1$ { get; private set; }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-ps-" value="    private string $var1$ { get; set; }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-m" value="    $var1$ $var2$ $var3$($var4$) {&#10;        $END$&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;public&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;void&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var4" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-m+" value="    public $var1$ $var2$($var3$) {&#10;        $END$&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;void&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-m&amp;" value="    internal $var1$ $var2$($var3$) {&#10;        $END$&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;void&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-m|" value="    protected $var1$ $var2$($var3$) {&#10;        $END$&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;void&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-m-" value="    private $var1$ $var2$($var3$) {&#10;        $END$&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;void&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-mi" value="    $var1$ int $var2$($var3$) {&#10;        $var0$&#10;    }&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;public&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;return 0;&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-mi+" value="    public int $var1$($var2$) {&#10;        $var0$&#10;    }&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;return 0;&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-mi&amp;" value="    internal int $var1$($var2$) {&#10;        $var0$&#10;    }&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;return 0;&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-mi|" value="    protected int $var1$($var2$) {&#10;        $var0$&#10;    }&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;return 0;&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-mi-" value="    private int $var1$($var2$) {&#10;        $var0$&#10;    }&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;return 0;&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-mb" value="    $var1$ bool $var2$($var3$) {&#10;        $var0$&#10;    }&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;public&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;return false;&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-mb+" value="    public bool $var1$($var2$) {&#10;        $var0$&#10;    }&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;return false;&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-mb&amp;" value="    internal bool $var1$($var2$) {&#10;        $var0$&#10;    }&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;return false;&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-mb|" value="    protected bool $var1$($var2$) {&#10;        $var0$&#10;    }&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;return false;&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-mb-" value="    private bool $var1$($var2$) {&#10;        $var0$&#10;    }&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;return false;&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-ms" value="    $var1$ string $var2$($var3$) {&#10;        $var0$&#10;    }&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;public&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;return \&quot;\&quot;;&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-ms+" value="    public string $var1$($var2$) {&#10;        $var0$&#10;    }&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;return \&quot;\&quot;;&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-ms&amp;" value="    internal string $var1$($var2$) {&#10;        $var0$&#10;    }&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;return \&quot;\&quot;;&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-ms|" value="    protected string $var1$($var2$) {&#10;        $var0$&#10;    }&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;}(${2:&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;return \&quot;\&quot;;&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-ms-" value="    private string $var1$($var2$) {&#10;        $var0$&#10;    }&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;return \&quot;\&quot;;&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-enum" value="    enum $var1$ {&#10;        $END$&#10;    }&#10;    &#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-enum+" value="    public enum $var1$ {&#10;        $END$&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-#if" value="    #if&#10;        $END$&#10;    #endif&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-///" value="    /// &lt;summary&gt;&#10;    /// $END$&#10;    /// &lt;/summary&gt;&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-&lt;p" value="    &lt;param name=&quot;$var1$&quot;&gt;$var2$&lt;/param&gt;&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;$1&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-&lt;ex" value="    &lt;exception cref=&quot;$var1$&quot;&gt;$var2$&lt;/exception&gt;&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;System.Exception&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-&lt;r" value="    &lt;returns&gt;$var1$&lt;/returns&gt;{&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-&lt;s" value="    &lt;see cref=&quot;$var1$&quot;/&gt;&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-&lt;rem" value="    &lt;remarks&gt;$var1$&lt;/remarks&gt;&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-&lt;c" value="    &lt;code&gt;$var1$&lt;/code&gt;&#10;&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-cw" value="    Console.WriteLine($var1$);&#10;&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-eq" value="    public override bool Equals(object obj) {&#10;        if (obj == null || GetType() != obj.GetType()) {&#10;            return false;&#10;        }&#10;        $var0$&#10;        return base.Equals(obj);&#10;    }&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var0" expression="" defaultValue="&quot;throw new NotImplementedException();&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-exc" value="    public class $var1$ : $var2$ {&#10;        public $var1$() { }&#10;        public $var1$(string message) : base(message) { }&#10;        public $var1$(string message, Exception inner) : base(message, inner) { }&#10;        protected $var1$(&#10;            System.Runtime.Serialization.SerializationInfo info,&#10;            System.Runtime.Serialization.StreamingContext context)&#10;                : base(info, context) { }&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;MyException&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;Exception&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-index" value="    public $var1$ this[$var2$ index] {&#10;        get { $END$ }&#10;        set { $END$ }&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;object&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;int&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-inv" value="    EventHandler temp = $var1$;&#10;    if ($var2$ != null) {&#10;        $var2$();&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;MyEvent&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;temp&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-lock" value="    lock ($var1$) {&#10;        $END$&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;this&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-namespace" value="    namespace $var1$ {&#10;        $END$&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;MyNamespace&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-prop" value="    public $var1$ $var2$ { get; set; }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;int&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;MyProperty&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-propf" value="    private $var1$ $var2$;&#10;        public $var1$ $var3$ {&#10;            get { return $var2$; }&#10;            set { $var2$ = value; }&#10;        }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;int&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;myVar&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;MyProperty&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-propg" value="    public $var1$ $var2$ { get; private set; }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;int&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;MyProperty&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-switch" value="    switch ($var1$) {&#10;        $END$&#10;        default:&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;switch_on&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-try" value="    try {&#10;            $END$&#10;    }&#10;    catch ($var1$) {&#10;            throw;&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;System.Exception&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js-tryf" value="    try {&#10;        $END$&#10;    }&#10;    finally {&#10;        $var1$&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+</templateSet>

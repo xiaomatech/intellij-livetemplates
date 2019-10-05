@@ -1,0 +1,139 @@
+<templateSet group="javascript.es6">
+  <template name="js6-const" value="    const $var1$ = $END$;&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js6-let" value="    let $var1$ = $END$;&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js6-im" value="    import $var1$ from '$var2$';&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;$1&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js6-imas" value="    import * as $var1$ from '$var2$';&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;$1&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js6-imm" value="    import { $var1$ } from '$var2$';&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js6-cla" value="    class $var1$ {&#10;        $END$&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js6-clax" value="    class $var1$ extends $var2$ {&#10;        $END$&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js6-clac" value="    class $var1$ {&#10;        constructor($var2$) {&#10;            $END$&#10;        }&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js6-foro" value="    for (const $var1$ of $var2$) {&#10;        $var0$&#10;    }&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;prop&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;object&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;$1&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js6-fun*" value="    function* $var1$($var2$) {&#10;        $END$&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;function_name&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js6-c=&gt;" value="    const $var1$ = ($var2$) =&gt; {&#10;        $END$&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;function_name&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js6-caf" value="    const $var1$ = ($var2$) =&gt; {&#10;        $END$&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;function_name&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js6-=&gt;" value="    ($var1$) =&gt; {&#10;        $END$&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js6-af" value="    ($var1$) =&gt; {&#10;        $END$&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js6-sym" value="    const $var1$ = Symbol('$END$');&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="js6-ed" value="    export default $END$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+</templateSet>

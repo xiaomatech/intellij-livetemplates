@@ -1,0 +1,1277 @@
+<templateSet group="rails">
+  <template name="rl-art" value="    assert_redirected_to $var1$: '$var2$'&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;action&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;index&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-artnp" value="    assert_redirected_to $var1$_$var2$_path($var3$, $var0$)&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;parent&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;child&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;@$1&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;@$2&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-artnpp" value="    assert_redirected_to $var1$_$var2$_path($var0$)&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;parent&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;child&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;@$1&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-artp" value="    assert_redirected_to $var1$_path($var0$)&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;model&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;@$1&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-artpp" value="    assert_redirected_to $var0$s_path&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var0" expression="" defaultValue="&quot;model&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-asd" value="    assert_difference '$var1$.$var2$', $var3$ do&#10;        $END$&#10;    end&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;Model&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;count&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-asnd" value="    assert_no_difference '$var1$.$var2$' do&#10;        $END$&#10;    end&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;Model&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;count&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-asre" value="    assert_response :$var1$, @response.body&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;success&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-asrj" value="    assert_rjs :$var1$, '$var0$'&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;replace&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;dom id&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-ass" value="    assert_select '$var1$', $var2$: '$var3$' $var4$&#10;        $END$&#10;    end&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;path&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;text&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;inner_html&quot;" alwaysStopAt="true"/>
+    <variable name="var4" expression="" defaultValue="&quot;do&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-ba" value="    before_action :$var0$&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var0" expression="" defaultValue="&quot;method&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-bf" value="    before_filter :$var0$&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var0" expression="" defaultValue="&quot;method&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-bt" value="    belongs_to :$var0$&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var0" expression="" defaultValue="&quot;association&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-btp" value="    belongs_to :$var1$, polymorphic: true&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;association&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-crw" value="    cattr_accessor :$var0$&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var0" expression="" defaultValue="&quot;attr_names&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-defcreate" value="    def create&#10;        @$var1$ = $var2$.new($var1$_params)&#10;&#10;        respond_to do |format|&#10;            if @$var1$.save&#10;                flash[:notice] = '$var2$ was successfully created.'&#10;                format.html { redirect_to(@$var1$) }&#10;                format.xml  { render xml: @$var1$, status: :created, location: @$var1$ }&#10;            else&#10;                format.html { render action: 'new' }&#10;                format.xml  { render xml: @$var1$.errors, status: :unprocessable_entity }&#10;            end&#10;        end&#10;    end&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;model_class_name&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;ModelClassName&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-defdestroy" value="    def destroy&#10;        @$var1$ = $var2$.find(params[:id])&#10;        @$var1$.destroy&#10;&#10;        respond_to do |format|&#10;            format.html { redirect_to($var1$s_url) }&#10;            format.xml  { head :ok }&#10;        end&#10;    end&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;model_class_name&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;ModelClassName&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-defedit" value="    def edit&#10;        @$var1$ = $var0$.find(params[:id])&#10;    end&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;model_class_name&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;ModelClassName&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-defindex" value="    def index&#10;        @$var1$ = $var2$.all&#10;&#10;        respond_to do |format|&#10;            format.html # index.html.erb&#10;            format.xml  { render xml: @$var1$s }&#10;        end&#10;    end&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;model_class_name&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;ModelClassName&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-defnew" value="    def new&#10;        @$var1$ = $var2$.new&#10;&#10;        respond_to do |format|&#10;            format.html # new.html.erb&#10;            format.xml  { render xml: @$var1$ }&#10;        end&#10;    end&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;model_class_name&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;ModelClassName&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-defshow" value="    def show&#10;        @$var1$ = $var2$.find(params[:id])&#10;&#10;        respond_to do |format|&#10;            format.html # show.html.erb&#10;            format.xml  { render xml: @$var1$ }&#10;        end&#10;    end&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;model_class_name&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;ModelClassName&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-defupdate" value="    def update&#10;        @$var1$ = $var2$.find(params[:id])&#10;&#10;        respond_to do |format|&#10;            if @$var1$.update($var1$_params)&#10;                flash[:notice] = '$var2$ was successfully updated.'&#10;                format.html { redirect_to(@$var1$) }&#10;                format.xml  { head :ok }&#10;            else&#10;                format.html { render action: 'edit' }&#10;                format.xml  { render xml: @$var1$.errors, status: :unprocessable_entity }&#10;            end&#10;        end&#10;    end&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;model_class_name&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;ModelClassName&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-defparams" value="    def $var1$_params&#10;        params.require(:$var1$).permit()&#10;    end&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;model_class_name&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-dele" value="    delegate :$var1$, to: :$var0$&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;methods&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;object&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-dele" value="    delegate :$var1$, to: :$var2$, prefix: :$var3$, allow_nil: $var0$&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;methods&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;object&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;prefix&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;allow_nil&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-amc" value="    alias_method_chain :$var1$, :$var0$&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;method_name&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;feature&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-flash" value="    flash[:$var1$] = '$END$'&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;notice&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-habtm" value="    has_and_belongs_to_many :$var1$, join_table: '$var2$', foreign_key: '$var3$_id'&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;object&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;table_name&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-hm" value="    has_many :$var0$&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var0" expression="" defaultValue="&quot;object&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-hmd" value="    has_many :$var1$s, class_name: '$var2$', foreign_key: '$var3$_id', dependent: :destroy&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;other&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;$1&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;$1&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-hmt" value="    has_many :$var1$, through: :$var0$&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;object&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;object&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-ho" value="    has_one :$var0$&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var0" expression="" defaultValue="&quot;object&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-hod" value="    has_one :$var1$, dependent: :$var0$&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;object&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;destroy&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-i18" value="    I18n.t('$var1$')&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;type.key&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-ist" value="    &lt;%= image_submit_tag('$var1$', id: '$var2$'$END$) %&gt;&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;agree.png&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;id&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-log" value="    Rails.logger.$var1$ $END$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;debug&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-log2" value="    RAILS_DEFAULT_LOGGER.$var1$ $END$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;debug&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-logd" value="    logger.debug { '$var1$' }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;message&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-loge" value="    logger.error { '$var1$' }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;message&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-logf" value="    logger.fatal { '$var1$' }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;message&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-logi" value="    logger.info { '$var1$' }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;message&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-logw" value="    logger.warn { '$var1$' }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;message&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-mapc" value="    $var1$.$var2$ '$var0$'&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;map&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;connect&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;controller/:action/:id&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-mapca" value="    $var1$.catch_all '*$var2$', controller: '$var3$', action: '$var4$'&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;map&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;anything&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;default&quot;" alwaysStopAt="true"/>
+    <variable name="var4" expression="" defaultValue="&quot;error&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-mapr" value="    $var1$.resource :$var0$&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;map&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;resource&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-maprs" value="    $var1$.resources :$var0$&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;map&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;resource&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-mapwo" value="    $var1$.with_options $var2$: '$var3$' do |$var3$|&#10;        $END$&#10;    end&#10;&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;map&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;controller&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;thing&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-mbv" value="    before_validation :$var0$&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var0" expression="" defaultValue="&quot;method&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-mbc" value="    before_create :$var0$&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var0" expression="" defaultValue="&quot;method&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-mbu" value="    before_update :$var0$&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var0" expression="" defaultValue="&quot;method&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-mbs" value="    before_save :$var0$&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var0" expression="" defaultValue="&quot;method&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-mbd" value="    before_destroy :$var0$&#10;&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var0" expression="" defaultValue="&quot;method&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-mav" value="    after_validation :$var0$&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var0" expression="" defaultValue="&quot;method&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-maf" value="    after_find :$var0$&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var0" expression="" defaultValue="&quot;method&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-mat" value="    after_touch :$var0$&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var0" expression="" defaultValue="&quot;method&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-macr" value="    after_create :$var0$&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var0" expression="" defaultValue="&quot;method&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-mau" value="    after_update :$var0$&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var0" expression="" defaultValue="&quot;method&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-mas" value="    after_save :$var0$&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var0" expression="" defaultValue="&quot;method&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-mad" value="    after_destroy :$var0$&#10;&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var0" expression="" defaultValue="&quot;method&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-marc" value="    around_create :$var0$&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var0" expression="" defaultValue="&quot;method&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-maru" value="    around_update :$var0$&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var0" expression="" defaultValue="&quot;method&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-mars" value="    around_save :$var0$&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var0" expression="" defaultValue="&quot;method&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-mard" value="    around_destroy :$var0$&#10;&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var0" expression="" defaultValue="&quot;method&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-mcht" value="    change_table :$var1$ do |t|&#10;        $END$&#10;    end&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;table_name&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-mp" value="    map(&amp;:$var0$)&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var0" expression="" defaultValue="&quot;id&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-mrw" value="    mattr_accessor :$var0$&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var0" expression="" defaultValue="&quot;attr_names&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-oa" value="    order('$var0$')&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var0" expression="" defaultValue="&quot;field&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-od" value="    order('$var0$ DESC')&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var0" expression="" defaultValue="&quot;field&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-pa" value="    params[:$var1$]&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;id&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-ra" value="    render action: '$var0$'&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var0" expression="" defaultValue="&quot;action&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-ral" value="    render action: '$var1$', layout: '$var0$'&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;action&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;layoutname&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-rest" value="    respond_to do |format|&#10;        format.$var1$ { $END$ }&#10;    end&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;html&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-rf" value="    render file: '$var0$'&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var0" expression="" defaultValue="&quot;filepath&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-rfu" value="    render file: '$var1$', use_full_path: $var0$&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;filepath&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;false&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-ri" value="    render inline: &quot;$var0$&quot;&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var0" expression="" defaultValue="&quot;&lt;%= 'hello' %&gt;&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-ril" value="    render inline: &quot;$var1$&quot;, locals: { $var2$: '$var3$'$END$ }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;&lt;%= 'hello' %&gt;&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;value&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-rit" value="    render inline: &quot;$var1$&quot;, type: $var0$&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;&lt;%= 'hello' %&gt;&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;:rxml&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-rjson" value="    render json: '$var0$'&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var0" expression="" defaultValue="&quot;text to render&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-rl" value="    render layout: '$var0$'&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var0" expression="" defaultValue="&quot;layoutname&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-rn" value="    render nothing: $var0$&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var0" expression="" defaultValue="&quot;true&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-rns" value="    render nothing: $var1$, status: $var0$&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;true&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;401&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-rp" value="    render partial: '$var0$'&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var0" expression="" defaultValue="&quot;item&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-rpc" value="    render partial: '$var1$', collection: $var0$&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;item&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;@$1s&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-rpl" value="    render partial: '$var1$', locals: { $var2$: $var0$ }&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;item&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;$1&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;@$1&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-rpo" value="    render partial: '$var1$', object: $var0$&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;item&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;@$1&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-rps" value="    render partial: '$var1$', status: $var0$&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;item&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;500&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-rt" value="    render text: '$var0$'&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var0" expression="" defaultValue="&quot;text to render&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-rtl" value="    render text: '$var1$', layout: '$var0$'&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;text to render&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;layoutname&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-rtlt" value="    render text: '$var1$', layout: $var0$&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;text to render&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;true&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-rts" value="    render text: '$var1$', status: $var0$&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;text to render&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;401&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-ru" value="    render :update do |$var1$|&#10;        $var1$.$END$&#10;    end&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;page&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-rxml" value="    render xml: '$var0$'&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var0" expression="" defaultValue="&quot;text to render&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-sc" value="    scope :$var1$, -&gt; { where($var2$: $var0$) }&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;field&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;value&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-sl" value="    scope :$var1$, lambda do |$var2$|&#10;        where('$var3$', $var0$)&#10;    end&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;value&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;field = ?&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;value&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-sha1" value="    Digest::SHA1.hexdigest($var0$)&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var0" expression="" defaultValue="&quot;string&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-sweeper" value="    class $var1$Sweeper &lt; ActionController::Caching::Sweeper&#10;        observe $var1$&#10;&#10;        def after_save($var0$)&#10;            expire_cache($var2$)&#10;        end&#10;&#10;        def after_destroy($var2$)&#10;            expire_cache($var2$)&#10;        end&#10;&#10;        def expire_cache($var2$)&#10;            expire_page&#10;        end&#10;    end&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;ModelClassName&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;model_class_name&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-va" value="    validates_associated :$var0$&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var0" expression="" defaultValue="&quot;attribute&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-va" value="    validates :$var0$, acceptance: true&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var0" expression="" defaultValue="&quot;terms&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-vc" value="    validates :$var0$, confirmation: true&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var0" expression="" defaultValue="&quot;attribute&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-ve" value="    validates :$var1$, exclusion: { in: $var0$ }&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;attribute&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;%w( mov avi )&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-vf" value="    validates :$var1$, format: { with: /$var0$/ }&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;attribute&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;regex&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-vi" value="    validates :$var1$, inclusion: { in: %w($var0$) }&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;attribute&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot; mov avi &quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-vl" value="    validates :$var1$, length: { in: $var2$..$var0$ }&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;attribute&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;3&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;20&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-vn" value="    validates :$var0$, numericality: true&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var0" expression="" defaultValue="&quot;attribute&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-vp" value="    validates :$var0$, presence: true&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var0" expression="" defaultValue="&quot;attribute&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-vu" value="    validates :$var0$, uniqueness: true&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var0" expression="" defaultValue="&quot;attribute&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-format" value="    format.$var1$ { $END$ }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;js|xml|html&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-wc" value="    where($var1$$var0$)&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;'conditions'&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;, bind_var&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-wf" value="    where($var1$: $var0$)&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;field&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;value&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-xdelete" value="    xhr :delete, :$var1$, id: $var2$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;destroy&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-xget" value="    xhr :get, :$var1$, id: $var2$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;show&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-xpost" value="    xhr :post, :$var1$, $var2$: $var3$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;create&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;object&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;object&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-xput" value="    xhr :put, :$var1$, id: $var2$, $var3$: $var4$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;update&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;object&quot;" alwaysStopAt="true"/>
+    <variable name="var4" expression="" defaultValue="&quot;object&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-test" value="    test '$var1$' do&#10;        $END$&#10;    end&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;should do something&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-mac" value="    add_column :$var1$, :$var2$, :$var0$&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;table_name&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;column_name&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;data_type&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-mai" value="    add_index :$var1$, :$var0$&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;table_name&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;column_name&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-mrc" value="    remove_column :$var1$, :$var0$&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;table_name&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;column_name&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-mrnc" value="    rename_column :$var1$, :$var2$, :$var0$&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;table_name&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;old_column_name&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;new_column_name&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-mcc" value="    change_column :$var1$, :$var2$, :$var0$&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;table&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;column&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;type&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-mnc" value="    t.$var1$ :$var2$$var3$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;string&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;title&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;, null: false&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-mct" value="    create_table :$var1$ do |t|&#10;        $END$&#10;    end&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;table_name&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-trc" value="    t.remove :$var0$&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var0" expression="" defaultValue="&quot;column&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-tre" value="    t.rename :$var1$, :$var2$&#10;    $END$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;old_column_name&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;new_column_name&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-tref" value="    t.references :$var0$&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var0" expression="" defaultValue="&quot;model&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-tcb" value="    t.boolean :$var1$&#10;    $END$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;title&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-tcbi" value="    t.binary :$var1$, limit: $var2$.megabytes&#10;    $END$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;title&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;2&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-tcd" value="    t.decimal :$var1$, precision: $var2$, scale: $var3$&#10;    $END$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;title&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;10&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;2&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-tcda" value="    t.date :$var1$&#10;    $END$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;title&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-tcdt" value="    t.datetime :$var1$&#10;    $END$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;title&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-tcf" value="    t.float :$var1$&#10;    $END$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;title&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-tch" value="    t.change :$var1$, :$var2$, $var3$: $var4$&#10;    $END$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;string&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;limit&quot;" alwaysStopAt="true"/>
+    <variable name="var4" expression="" defaultValue="&quot;80&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-tci" value="    t.integer :$var1$&#10;    $END$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;title&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-tcl" value="    t.integer :lock_version, null: false, default: 0&#10;    $END$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-tcr" value="    t.references :$var1$, polymorphic: { default: '$var2$' }&#10;    $END$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;taggable&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;Photo&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-tcs" value="    t.string :$var1$&#10;    $END$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;title&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-tct" value="    t.text :$var1$&#10;    $END$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;title&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-tcti" value="    t.time :$var1$&#10;    $END$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;title&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-tcts" value="    t.timestamp :$var1$&#10;    $END$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;title&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-tctss" value="    t.timestamps&#10;    $END$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-isfp" value="    it { should filter_param :$var0$ }&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var0" expression="" defaultValue="&quot;key&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-isrt" value="    it { should redirect_to $var0$ }&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var0" expression="" defaultValue="&quot;url&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-isrtp" value="    it { should render_template $END$ }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-isrwl" value="    it { should render_with_layout $END$ }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-isrf" value="    it { should rescue_from $var0$ }&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var0" expression="" defaultValue="&quot;exception&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-isrw" value="    it { should respond_with $var0$ }&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var0" expression="" defaultValue="&quot;status&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-isr" value="    it { should route(:$var1$, '$var0$') }&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;method&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;path&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-isss" value="    it { should set_session :$var0$ }&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var0" expression="" defaultValue="&quot;key&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-issf" value="    it { should set_the_flash('$END$') }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-isama" value="    it { should allow_mass_assignment_of :$END$ }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-isav" value="    it { should allow_value($var1$).for :$END$ }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-isee" value="    it { should ensure_exclusion_of :$END$ }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-isei" value="    it { should ensure_inclusion_of :$END$ }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-isel" value="    it { should ensure_length_of :$END$ }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-isva" value="    it { should validate_acceptance_of :$END$ }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-isvc" value="    it { should validate_confirmation_of :$END$ }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-isvn" value="    it { should validate_numericality_of :$END$ }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-isvp" value="    it { should validate_presence_of :$END$ }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-isvu" value="    it { should validate_uniqueness_of :$END$ }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-isana" value="    it { should accept_nested_attributes_for :$END$ }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-isbt" value="    it { should belong_to :$END$ }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-isbtcc" value="    it { should belong_to(:$var1$).counter_cache $var0$ }&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;true&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-ishbtm" value="    it { should have_and_belong_to_many :$END$ }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-isbv" value="    it { should be_valid }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-ishc" value="    it { should have_db_column :$END$ }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-ishi" value="    it { should have_db_index :$END$ }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-ishm" value="    it { should have_many :$END$ }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-ishmt" value="    it { should have_many(:$var1$).through :$END$ }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-isho" value="    it { should have_one :$END$ }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-ishro" value="    it { should have_readonly_attribute :$END$ }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-iss" value="    it { should serialize :$END$ }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-isres" value="    it { should respond_to :$END$ }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+  <template name="rl-isresw" value="    it { should respond_to(:$var1$).with($END$).arguments }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="RUBY" value="true"/>
+      <option name="RHTML" value="true"/>
+    </context>
+  </template>
+</templateSet>

@@ -1,0 +1,67 @@
+<templateSet group="Flask-Jinja2">
+  <template name="fexp" value="{{ foo.bar }}&#10;" description="Add Flask template expression" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="ffilter" value="{{ foo.bar|filter }}" description="Add Flask template filter" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="fcomment" value="{# &#10;  comment &#10;#}" description="Add Flask template comment" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="fblock" value="{% block foo %}{% endblock %}&#10;" description="Add Flask template block" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="fextends" value="{% extends layout_template %}&#10;" description="Add Flask extends tag" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="fself" value="{{ self.block_name() }}" description="Add Flask self" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="fsuper" value="{{ self.supper() }}" description="Add Flask super command" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="ffor" value="{% for element in collection %}&#10;    {{ element }}&#10;{% endfor %}" description="Add Flask template for tag" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="fif" value="{% if expression %}&#10;    blockofcode&#10;{% endif %}" description="Add Flask 'if' template tag" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="furl" value="{{ url_for(&quot;template&quot;) }}" description="Add Flask url_for template tag" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="fflash" value="{% with messages = get_flashed_messages() %}&#10;  {% if messages %}&#10;    &lt;ul class=flashes&gt;&#10;    {% for message in messages %}&#10;      &lt;li&gt;{{ message }}&lt;/li&gt;&#10;    {% endfor %}&#10;    &lt;/ul&gt;&#10;  {% endif %}&#10;{% endwith %}" description="Add flash message" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="fflashcateg" value="{% with messages = get_flashed_messages(with_categories=true) %}&#10;  {% if messages %}&#10;    &lt;ul class=flashes&gt;&#10;    {% for category, message in messages %}&#10;      &lt;li class=&quot;{{ category }}&quot;&gt;{{ message }}&lt;/li&gt;&#10;    {% endfor %}&#10;    &lt;/ul&gt;&#10;  {% endif %}&#10;{% endwith %}" description="Add flash message with category" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="fflashfilter" value="{% with errors = get_flashed_messages(category_filter=[&quot;error&quot;]) %}&#10;{% if errors %}&#10;&lt;div class=&quot;alert-message block-message error&quot;&gt;&#10;  &lt;a class=&quot;close&quot; href=&quot;#&quot;&gt;×&lt;/a&gt;&#10;  &lt;ul&gt;&#10;    {%- for msg in errors %}&#10;    &lt;li&gt;{{ msg }}&lt;/li&gt;&#10;    {% endfor -%}&#10;  &lt;/ul&gt;&#10;&lt;/div&gt;&#10;{% endif %}&#10;{% endwith %}" description="Add flash message with category" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+</templateSet>

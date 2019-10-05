@@ -1,0 +1,154 @@
+<templateSet group="markdown">
+  <template name="md-[" value="    [$var1$](http://$var2$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;text&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;address&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="OTHER" value="true"/>
+    </context>
+  </template>
+  <template name="md-[&quot;" value="    [$var1$](http://$var2$ &quot;$var3$&quot;)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;text&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;address&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;title&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="OTHER" value="true"/>
+    </context>
+  </template>
+  <template name="md-[:" value="    [$var1$]: http://$var2$&#10;&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;id&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;url&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="OTHER" value="true"/>
+    </context>
+  </template>
+  <template name="md-[:&quot;" value="    [$var1$]: http://$var2$ &quot;$var3$&quot;&#10;&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;id&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;url&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;title&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="OTHER" value="true"/>
+    </context>
+  </template>
+  <template name="md-![" value="    ![$var1$]($var2$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;alttext&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;/images/image.jpg&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="OTHER" value="true"/>
+    </context>
+  </template>
+  <template name="md-![&quot;" value="    ![$var1$]($var2$ &quot;$var3$&quot;)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;alttext&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;/images/image.jpg&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;title&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="OTHER" value="true"/>
+    </context>
+  </template>
+  <template name="md-![:" value="    ![$var1$]: $var2$&#10;&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;id&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;url&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="OTHER" value="true"/>
+    </context>
+  </template>
+  <template name="md-![:&quot;" value="    ![$var1$]: $var2$ &quot;$var3$&quot;&#10;&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;id&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;url&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;title&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="OTHER" value="true"/>
+    </context>
+  </template>
+  <template name="md-&lt;" value="    &lt;http://$var1$&gt;&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;url&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="OTHER" value="true"/>
+    </context>
+  </template>
+  <template name="md-**" value="    **$var1$**&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;bold&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="OTHER" value="true"/>
+    </context>
+  </template>
+  <template name="md-__" value="    __$var1$__&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;bold&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="OTHER" value="true"/>
+    </context>
+  </template>
+  <template name="md--" value="    -   $END$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true"/>
+    </context>
+  </template>
+  <template name="md-blockquote" value="    {% blockquote %}&#10;    $var0$&#10;    {% endblockquote %}&#10;&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var0" expression="" defaultValue="&quot;quote&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="OTHER" value="true"/>
+    </context>
+  </template>
+  <template name="md-blockquote-author" value="    {% blockquote $var1$, $var2$ %}&#10;    $var0$&#10;    {% endblockquote %}&#10;&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;author&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;title&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;quote&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="OTHER" value="true"/>
+    </context>
+  </template>
+  <template name="md-blockquote-link" value="    {% blockquote $var1$ $var2$ $var3$ %}&#10;    $var0$&#10;    {% endblockquote %}&#10;&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;author&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;URL&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;link_text&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;quote&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="OTHER" value="true"/>
+    </context>
+  </template>
+  <template name="md-codeblock-short" value="    {% codeblock %}&#10;    $var0$&#10;    {% endcodeblock %}&#10;&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var0" expression="" defaultValue="&quot;code_snippet&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="OTHER" value="true"/>
+    </context>
+  </template>
+  <template name="md-codeblock-full" value="    {% codeblock $var1$ lang:$var2$ $var3$ $var4$ %}&#10;    $var0$&#10;    {% endcodeblock %}&#10;&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;title&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;language&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;URL&quot;" alwaysStopAt="true"/>
+    <variable name="var4" expression="" defaultValue="&quot;link_text&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;code_snippet&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="OTHER" value="true"/>
+    </context>
+  </template>
+  <template name="md-gist-full" value="    {% gist $var1$ $var0$ %}&#10;&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;gist_id&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;filename&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="OTHER" value="true"/>
+    </context>
+  </template>
+  <template name="md-gist-short" value="    {% gist $var0$ %}&#10;&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var0" expression="" defaultValue="&quot;gist_id&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="OTHER" value="true"/>
+    </context>
+  </template>
+  <template name="md-img" value="    {% img $var1$ $var2$ $var3$ $var4$ $var5$ $var0$ %}&#10;&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;class&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;URL&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;width&quot;" alwaysStopAt="true"/>
+    <variable name="var4" expression="" defaultValue="&quot;height&quot;" alwaysStopAt="true"/>
+    <variable name="var5" expression="" defaultValue="&quot;title_text&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;alt_text&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="OTHER" value="true"/>
+    </context>
+  </template>
+  <template name="md-youtube" value="    {% youtube $var0$ %}&#10;&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var0" expression="" defaultValue="&quot;video_id&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="OTHER" value="true"/>
+    </context>
+  </template>
+</templateSet>

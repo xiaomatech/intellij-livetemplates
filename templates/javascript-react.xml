@@ -1,0 +1,167 @@
+<templateSet group="react">
+  <template name="re-ir" value="    import React from 'react';&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="re-ird" value="    import ReactDOM from 'react-dom';&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="re-cdm" value="    componentDidMount() {&#10;        $var1$&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="re-cdup" value="    componentDidUpdate(prevProps, prevState) {&#10;        $var1$&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="re-cwm" value="    componentWillMount() {&#10;        $var1$&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="re-cwr" value="    componentWillReceiveProps(nextProps) {&#10;        $var1$&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="re-cwun" value="    componentWillUnmount() {&#10;        $var1$&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="re-cwu" value="    componentWillUpdate(nextProps, nextState) {&#10;        $var1$&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="re-fup" value="    forceUpdate($var1$);&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;callback&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="re-dp" value="    static defaultProps = {&#10;        $var1$: $var2$,&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="re-st" value="    state = {&#10;        $var1$: $var2$,&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="re-pt" value="    static propTypes = {&#10;        $var1$: React.PropTypes.$var2$,&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;type&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="re-rcc" value="    class $var1$ extends React.Component {&#10;        render() {&#10;            return (&#10;                $var0$&#10;            );&#10;        }&#10;    }&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;ClassName&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;&lt;div /&gt;&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="re-rdr" value="    ReactDOM.render($var1$, $var2$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="re-ercc" value="    export default class $var1$ extends React.Component {&#10;        render() {&#10;            return (&#10;                $var0$&#10;            );&#10;        }&#10;    }&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;ClassName&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;&lt;div /&gt;&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="re-ctor" value="    constructor() {&#10;        super();&#10;        $var1$&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="re-ren" value="    render() {&#10;        return (&#10;            $var1$&#10;        );&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;&lt;div /&gt;&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="re-sst" value="    this.setState({&#10;        $var1$: $var2$&#10;    });&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="re-scu" value="    shouldComponentUpdate(nextProps, nextState) {&#10;        $var1$&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="re-prp" value="    this.props.$var1$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+</templateSet>

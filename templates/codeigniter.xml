@@ -1,0 +1,345 @@
+<templateSet group="codeigniter">
+  <template name="ci_controller" value="    &lt;?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');&#10;&#10;    class $var1$ extends CI_Controller&#10;    {&#10;        function __construct()&#10;        {&#10;            parent::__construct();&#10;            $var2$&#10;        }&#10;&#10;        function $var3$()&#10;        {&#10;            $var4$&#10;        }&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;ClassName&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;// code...&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;index&quot;" alwaysStopAt="true"/>
+    <variable name="var4" expression="" defaultValue="&quot;// code...&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="ci_model" value="    &lt;?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');&#10;&#10;    class $var1$ extends CI_Model&#10;    {&#10;        function __construct()&#10;        {&#10;            parent::__construct();&#10;            $var2$&#10;        }&#10;    } &#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;ClassName_model&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;// code...&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="ci_model_crudl" value="    &lt;?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');&#10;&#10;    class $var1$ extends CI_Model&#10;    {&#10;        private $table = '$var2$';&#10;&#10;        function __construct()&#10;        {&#10;            parent::__construct();&#10;            $var3$&#10;        }&#10;&#10;        public function create($data)&#10;        {&#10;            if($this-&gt;db-&gt;insert($this-&gt;table, $data))&#10;                return true;&#10;            else&#10;                return false;&#10;        }&#10;&#10;        public function read($id)&#10;        {&#10;            return $this-&gt;db-&gt;get_where($this-&gt;table, array('id', $id))-&gt;result();&#10;        }&#10;&#10;        public function update($id, $data)&#10;        {&#10;            if($this-&gt;db-&gt;update($this-&gt;table, $data, array('id' =&gt; $id)))&#10;                return true;&#10;            else&#10;                return false;&#10;        }&#10;&#10;        public function delete($id)&#10;        {&#10;            if(is_array($id))&#10;            {&#10;                $this-&gt;db-&gt;trans_start();&#10;                foreach($id as $elem)&#10;                    $this-&gt;db-&gt;delete($this-&gt;table, array('id' =&gt; $elem));&#10;                $this-&gt;db-&gt;trans_complete();&#10;            }&#10;            else&#10;            {&#10;                if($this-&gt;db-&gt;delete($this-&gt;table, array('id' =&gt; $id)))&#10;                    return true;&#10;                else&#10;                    return false;&#10;            }&#10;        }&#10;&#10;        public function listRows($limit = null, $offset = 0)&#10;        {&#10;            if(!is_null($limit))&#10;                $this-&gt;db-&gt;limit($limit, $offset);&#10;            return $this-&gt;db-&gt;get($this-&gt;table)-&gt;result();&#10;        }&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;ClassName_model&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;table_name&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;// code...&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="ci_load-view" value="    $this-&gt;load-&gt;view(&quot;$var1$&quot;, $$var2$);$var3$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;view_name&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;data&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="ci_db-insert" value="    $this-&gt;db-&gt;insert(&quot;$var1$&quot;, $$var2$);$var3$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;table&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;data&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="ci_db-select" value="    $this-&gt;db-&gt;select(&quot;$var1$&quot;);$var2$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;id, ...&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="ci_db-from" value="    $this-&gt;db-&gt;from(&quot;$var1$&quot;);$var2$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;table&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="ci_db-join" value="    $this-&gt;db-&gt;join(&quot;$var1$&quot;, &quot;$var2$&quot;, &quot;$var3$&quot;);$var4$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;table&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;condition&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;type&quot;" alwaysStopAt="true"/>
+    <variable name="var4" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="ci_db-where" value="    $this-&gt;db-&gt;where(&quot;$var1$&quot;, &quot;$var2$&quot;);$var3$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;key&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;value&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="ci_db-or_where" value="    $this-&gt;db-&gt;or_where(&quot;$var1$&quot;, &quot;$var2$&quot;);$var3$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;key&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;value&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="ci_db-get" value="    $this-&gt;db-&gt;get(&quot;$var1$&quot;, $var2$, $var3$);$var4$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;table&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;limit&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;offset&quot;" alwaysStopAt="true"/>
+    <variable name="var4" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="ci_db-delete" value="    $this-&gt;db-&gt;delete(&quot;$var1$&quot;, &quot;$var2$&quot;);$var3$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;table&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;where&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="ci_db-update" value="    $this-&gt;db-&gt;update(&quot;$var1$&quot;, $$var2$, $$var3$);$var4$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;table&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;set&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;where&quot;" alwaysStopAt="true"/>
+    <variable name="var4" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="ci_input-post" value="    $this-&gt;input-&gt;post(&quot;$var1$&quot;);$var2$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;index&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="ci_input-get" value="    $this-&gt;input-&gt;get(&quot;$var1$&quot;);$var2$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;index&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="ci_input-cookie" value="    $this-&gt;input-&gt;cookie(&quot;$var1$&quot;);$var2$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;index&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="ci_input-server" value="    $this-&gt;input-&gt;server(&quot;$var1$&quot;);$var2$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;index&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="ci_input-user_agent" value="    $this-&gt;input-&gt;user_agent();$var1$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="ci_input-is_ajax_request" value="    $this-&gt;input-&gt;is_ajax_request();$var1$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="ci_input-is_cli_request" value="    $this-&gt;input-&gt;is_cli_request();$var1$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="ci_form_validation-set_rules" value="    $this-&gt;form_validation-&gt;set_rules(&quot;$var1$&quot;, &quot;$var2$&quot;, &quot;$var3$&quot;);$var4$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;field&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;label&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;trim|required&quot;" alwaysStopAt="true"/>
+    <variable name="var4" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="ci_form_open" value="    form_open(&quot;$var1$&quot;);$var2$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;action&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="ci_form_open_multipart" value="    form_open_multipart(&quot;$var1$&quot;);$var2$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;action&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="ci_form_hidden" value="    form_hidden(&quot;$var1$&quot;, &quot;$var2$&quot;);$var3$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;value&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="ci_form_input" value="    form_input(&quot;$var1$&quot;, &quot;$var2$&quot;);$var3$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;value&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="ci_form_password" value="    form_password(&quot;$var1$&quot;, &quot;$var2$&quot;);$var3$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;value&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="ci_form_upload" value="    form_upload(&quot;$var1$&quot;, &quot;$var2$&quot;);$var3$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;value&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="ci_form_textarea" value="    form_textarea(&quot;$var1$&quot;, &quot;$var2$&quot;);$var3$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;value&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="ci_form_dropdown" value="    form_dropdown(&quot;$var1$&quot;, $$var2$, $$var3$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;options&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;selected);${4&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="ci_form_checkbox" value="    form_checkbox(&quot;$var1$&quot;, &quot;$var2$&quot;);$var3$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;value&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="ci_form_radio" value="    form_radio(&quot;$var1$&quot;, &quot;$var2$&quot;);$var3$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;value&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="ci_form_submit" value="    form_submit(&quot;$var1$&quot;, &quot;$var2$&quot;);$var3$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;value&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="ci_form_reset" value="    form_reset(&quot;$var1$&quot;, &quot;$var2$&quot;);$var3$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;value&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="ci_form_button" value="    form_button(&quot;$var1$&quot;, &quot;$var2$&quot;);$var3$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;value&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="ci_form_label" value="    form_label(&quot;$var1$&quot;, &quot;$var2$&quot;);$var3$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;label text&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;id&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="ci_form_close" value="    form_close();$var1$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="ci_validation_errors" value="    validation_errors();$var1$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="ci_session_userdata" value="    $this-&gt;session-&gt;userdata(&quot;$var1$&quot;);$var2$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;item&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="ci_session_set_userdata" value="    $this-&gt;session-&gt;set_userdata($$var1$);$var2$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;array&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="ci_session_flashdata" value="    $this-&gt;session-&gt;flashdata(&quot;$var1$&quot;);$var2$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;item&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+</templateSet>

@@ -1,0 +1,809 @@
+<templateSet group="php">
+  <template name="p-&lt;?" value="    &lt;?php&#10;&#10;    $END$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-dst" value="    declare(strict_types=$var1$);&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-ec" value="    echo $END$;&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-&lt;?e" value="    &lt;?php echo $END$ ?&gt;&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-&lt;?=" value="    &lt;?=$END$?&gt;&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-?=" value="    &lt;?= $END$ ?&gt;&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-?" value="    &lt;?php $END$ ?&gt;&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-?f" value="    &lt;?php foreach ($$var1$ as $$var2$): ?&gt;&#10;        $END$&#10;    &lt;?php endforeach ?&gt;&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;vars&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;$var&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-?i" value="    &lt;?php if ($$var1$): ?&gt;&#10;        $END$&#10;    &lt;?php endif ?&gt;&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;var&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-ns" value="    namespace $var1$;&#10;    $END$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;Foo\Bar\Baz&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-t." value="    $this-&gt;&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-f" value="    function $var1$($var3$)&#10;    {&#10;        $END$&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-m" value="    $var1$ function $var2$()&#10;    {&#10;        $END$&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;protected&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;foo&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-gm" value="    /**&#10;     * Gets the value of $var1$&#10;     *&#10;     * @return $var2$&#10;     */&#10;    $var3$ function get$var4$()&#10;    {&#10;        return $this-&gt;$var5$;&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;foo&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;string&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;public&quot;" alwaysStopAt="true"/>
+    <variable name="var4" expression="" defaultValue="&quot;$1&quot;" alwaysStopAt="true"/>
+    <variable name="var5" expression="" defaultValue="&quot;$1&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-$s" value="    $var1$-&gt;set$var2$($END$);&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;$foo&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;Bar&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-$g" value="    $var1$-&gt;get$var0$();&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;$foo&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;Bar&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-=?:" value="    $$var1$ = $var2$ ? $var3$ : $END$;&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;foo&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;true&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;a&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-?:" value="    $var1$ ? $var2$ : $END$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;true&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;a&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-t" value="    $$var1$ = ($var2$) ? $var3$ : $var4$;&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;retVal&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;condition&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;a&quot;" alwaysStopAt="true"/>
+    <variable name="var4" expression="" defaultValue="&quot;b&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-C" value="    $_COOKIE['$var1$']&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;variable&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-E" value="    $_ENV['$var1$']&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;variable&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-F" value="    $_FILES['$var1$']&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;variable&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-G" value="    $_GET['$var1$']&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;variable&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-P" value="    $_POST['$var1$']&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;variable&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-R" value="    $_REQUEST['$var1$']&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;variable&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-S" value="    $_SERVER['$var1$']&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;variable&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-SS" value="    $_SESSION['$var1$']&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;variable&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-get" value="    $_GET['$var1$']&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-post" value="    $_POST['$var1$']&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-session" value="    $_SESSION['$var1$']&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-inc" value="    include '$var1$';&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;file&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-inc1" value="    include_once '$var1$';&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;file&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-req" value="    require '$var1$';&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;file&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-req1" value="    require_once '$var1$';&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;file&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-/*" value="    /**&#10;     * $END$&#10;     */&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-doc_vp" value="    /**&#10;     * $var1$&#10;     *&#10;     * @var $var2$&#10;     */&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;undocumented class variable&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;string&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-doc_v" value="    /**&#10;     * $var3$&#10;     *&#10;     * @var $var4$&#10;     */&#10;    $var1$ $$var2$;&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;var&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;undocumented class variable&quot;" alwaysStopAt="true"/>
+    <variable name="var4" expression="" defaultValue="&quot;string&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-doc_dp" value="    /**&#10;     * $var1$&#10;     */&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;undocumented constant&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-doc_d" value="    /**&#10;     * $var3$&#10;     */&#10;    define($var1$, $var2$);&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;undocumented constant&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-inheritdoc" value="    /**&#10;     * {@inheritdoc}&#10;     */&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-def" value="    define('$var1$', $var2$);&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;VARIABLE_NAME&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;'definition'&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-def?" value="    $var1$defined('$var2$')&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-wh" value="    while ($var1$) {&#10;        $END$&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;/* condition */&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-do" value="    do {&#10;        $END$&#10;    } while ($var1$);&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-if" value="    if ($var1$) {&#10;        $END$&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-ifn" value="    if (!$var1$) {&#10;        $var2$&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-ifil" value="    &lt;?php if ($var1$): ?&gt;&#10;        $END$&#10;    &lt;?php endif; ?&gt;&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-ife" value="    if ($var1$) {&#10;        $var2$&#10;    } else {&#10;        $var3$&#10;    }&#10;    $END$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-ifeil" value="    &lt;?php if ($var1$): ?&gt;&#10;        $var2$&#10;    &lt;?php else: ?&gt;&#10;        $var3$&#10;    &lt;?php endif; ?&gt;&#10;    $END$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-el" value="    else {&#10;        $END$&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-eif" value="    elseif ($var1$) {&#10;        $END$&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-switch" value="    switch ($$var1$) {&#10;        case '$var2$':&#10;            $var3$&#10;            break;&#10;        $END$&#10;        default:&#10;            $var4$&#10;            break;&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;variable&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;value&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var4" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-case" value="    case '$var1$':&#10;        $var2$&#10;        break;&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;value&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-for" value="    for ($$var2$ = 0; $$var2$ &lt; $var1$; $$var2$$var3$) {&#10;        $END$&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;count&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;i&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;++&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-foreach" value="    foreach ($$var1$ as $$var2$) {&#10;        $END$&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;variable&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;value&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-foreachil" value="    &lt;?php foreach ($$var1$ as $$var2$): ?&gt;&#10;        $END$&#10;    &lt;?php endforeach; ?&gt;&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;variable&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;value&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-foreachk" value="    foreach ($$var1$ as $$var2$ =&gt; $$var3$) {&#10;        $END$&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;variable&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;key&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;value&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-foreachkil" value="    &lt;?php foreach ($$var1$ as $$var2$ =&gt; $$var3$): ?&gt;&#10;        $var0$&#10;    &lt;?php endforeach; ?&gt;&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;variable&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;key&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;value&quot;" alwaysStopAt="true"/>
+    <variable name="var0" expression="" defaultValue="&quot;&lt;!-- html... --&gt;&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-array" value="    $$var1$ = ['$var2$' =&gt; $var3$];&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;arrayName&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-try" value="    try {&#10;        $END$&#10;    } catch ($var1$ $e) {&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;Exception&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-lambda" value="    $var1$function ($var2$) use ($var3$) {&#10;        $END$&#10;    };&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;static &quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;args&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;&amp;$x, $y /*put vars in scope (closure) */&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-pd" value="    echo '&lt;pre&gt;'; var_dump($END$); echo '&lt;/pre&gt;';&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-pdd" value="    echo '&lt;pre&gt;'; var_dump($var1$); echo '&lt;/pre&gt;'; die($END$);&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-vd" value="    var_dump($END$);&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-vdd" value="    var_dump($var1$); die($END$);&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-pr" value="    print_r($END$);&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-prs" value="    print_r($END$, 1);&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-vdf" value="    error_log(print_r($$var1$, true), 3, '$var2$');&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;foo&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;/tmp/debug.log&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-http_redirect" value="    header (&quot;HTTP/1.1 301 Moved Permanently&quot;);&#10;    header (&quot;Location: &quot;.URL);&#10;    exit();&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-log" value="    error_log(var_export($var1$, true));&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-var" value="    var_export($var1$);&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-ve" value="    echo '&lt;pre&gt;' . var_export($var1$, 1) . '&lt;/pre&gt;';&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-pc" value="    var_export($var1$);$var0$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-ags" value="    /**&#10;     * $var1$&#10;     *&#10;     * @$END$&#10;     */&#10;    $var2$ $$var3$;&#10;&#10;    public function get$var4$()&#10;    {&#10;        return $this-&gt;$var3$;&#10;    }&#10;&#10;    public function set$var4$($var5$$$var6$)&#10;    {&#10;        $this-&gt;$var3$ = $$var6$;&#10;        return $this;&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;description&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;protected&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;foo&quot;" alwaysStopAt="true"/>
+    <variable name="var4" expression="" defaultValue="&quot;$3&quot;" alwaysStopAt="true"/>
+    <variable name="var5" expression="" defaultValue="&quot;$4 &quot;" alwaysStopAt="true"/>
+    <variable name="var6" expression="" defaultValue="&quot;$3&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-rett" value="    return true;&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-retf" value="    return false;&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-am" value="    $$var1$ = array_map(function($$var2$) {&#10;        $END$&#10;        return $$var2$;&#10;    }, $$var1$);&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;foo&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;v&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-aw" value="    array_walk($$var1$, function(&amp;$$var2$, $$var3$) {&#10;        $$var2$ = $END$;&#10;    });&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;foo&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;v&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;k&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-static_var" value="    static $$var1$ = null;&#10;    if (is_null($$var1$)){&#10;        $$var1$ = $var2$;&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-CSVWriter" value="    &lt;?php&#10;    &#10;    class CSVWriter {&#10;        public function __construct($file_or_handle, $sep = &quot;\t&quot;, $quot = '&quot;'){&#10;            $args = func_get_args();&#10;            $mode = isset($opts['mode']) ? $opts['mode'] : 'w';&#10;    &#10;            $this-&gt;f =&#10;                is_string($file_or_handle)&#10;                ? fopen($file_or_handle, $mode)&#10;                : $file_or_handle;&#10;    &#10;            $this-&gt;fputcsv_args = [$this-&gt;f, null, $sep, $quot];&#10;    &#10;            if (!$this-&gt;f) throw new Exception('bad file descriptor');&#10;        }&#10;    &#10;        public function write($row){&#10;            $this-&gt;fputcsv_args[1] =&amp; $row;&#10;            call_user_func_array('fputcsv', $this-&gt;fputcsv_args);&#10;        }&#10;    &#10;        public function close(){&#10;            if (!is_null($this-&gt;f))&#10;                fclose($this-&gt;f);&#10;            $this-&gt;f = null;&#10;        }&#10;    &#10;        public function __destruct(){&#10;            $this-&gt;close();&#10;        }&#10;    &#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-CSVIterator" value="    &#10;    // http://snipplr.com/view.php?codeview&amp;id=1986 // modified&#10;    class CSVIterator implements Iterator&#10;    {    &#10;        private $f;&#10;        private $curr;&#10;        private $rowCounter;&#10;    &#10;         /* opts keys:&#10;            * row_size&#10;            * escape&#10;            * enclosure&#10;            * delimiter&#10;            */&#10;        public function __construct( $file_or_handle, $opts = [4096, ','] )&#10;        {&#10;            $d = function($n) use(&amp;$opts){ return isset($opts[$n]) ? $opts[$n] : false; };&#10;    &#10;            $this-&gt;combine = $d('combine');&#10;            $this-&gt;headers = $d('headers');&#10;            $this-&gt;headerCheckFunction = $d('header_check_function');&#10;    &#10;            $this-&gt;f =&#10;                is_string($file_or_handle)&#10;                ? fopen( $file_or_handle, 'r' )&#10;                : $file_or_handle;&#10;            if (!$this-&gt;f) throw new Exception('bad file descriptor');&#10;            $this-&gt;fgetcsv_args = [&#10;                    $this-&gt;f,&#10;                    isset($opts['row_size']) ? $opts['row_size'] : 4096,&#10;                    isset($opts['delimiter']) ? $opts['delimiter'] : ',',&#10;                    isset($opts['enclosure']) ? $opts['enclosure'] : '&quot;',&#10;                    isset($opts['escape']) ? $opts['escape'] : '\\',&#10;            ];&#10;            $this-&gt;start();&#10;        }&#10;    &#10;        protected function readRow(){&#10;            $this-&gt;curr = call_user_func_array('fgetcsv', $this-&gt;fgetcsv_args );&#10;            $this-&gt;rowCounter++;&#10;            if ($this-&gt;rowCounter == 1){&#10;                $this-&gt;processHeader();&#10;            } elseif ($this-&gt;curr) {&#10;                $this-&gt;processRow();&#10;            }&#10;        }&#10;    &#10;        public function processHeader(){&#10;            if ($this-&gt;headers || $this-&gt;combine){&#10;                $this-&gt;header = $this-&gt;curr;&#10;                if ($this-&gt;headerCheckFunction){&#10;                    $f = $this-&gt;headerCheckFunction;&#10;                    $f($this-&gt;header);&#10;                }&#10;                $this-&gt;readRow();&#10;            }&#10;        }&#10;    &#10;        public function processRow(){&#10;            if ($this-&gt;combine)&#10;                $this-&gt;curr = array_combine($this-&gt;header, $this-&gt;curr);&#10;        }&#10;    &#10;        public function start(){&#10;            $this-&gt;rowCounter = 0;&#10;            rewind( $this-&gt;f );&#10;            $this-&gt;readRow();&#10;        }&#10;    &#10;        public function rewind()&#10;        {&#10;            $this-&gt;start();&#10;        }&#10;    &#10;        public function current()&#10;        {&#10;            $curr = $this-&gt;curr;&#10;            $this-&gt;readRow();&#10;            return $curr;&#10;        }&#10;    &#10;        public function key()&#10;        {&#10;            return $this-&gt;rowCounter;&#10;        }&#10;    &#10;        public function next()&#10;        {&#10;            return $this-&gt;curr;&#10;        }&#10;    &#10;        public function valid(){&#10;            if( !$this-&gt;next() )&#10;            {&#10;                fclose( $this-&gt;f );&#10;                return FALSE;&#10;            }&#10;            return TRUE;&#10;        }&#10;    &#10;    } // end class&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-ase" value="    $this-&gt;assertEquals($var1$, $var2$);&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;expected&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;actual&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-asne" value="    $this-&gt;assertNotEquals($var1$, $var2$);&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;expected&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;actual&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-asf" value="    $this-&gt;assertFalse($var1$);&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-ast" value="    $this-&gt;assertTrue($var1$);&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-asfex" value="    $this-&gt;assertFileExists($var1$);&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;'path/to/file'&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-asfnex" value="    $this-&gt;assertFileNotExists($var1$);&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;'path/to/file'&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-ascon" value="    $this-&gt;assertContains($var1$, $var2$);&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;$needle&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;$haystack&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-ashk" value="    $this-&gt;assertArrayHasKey($var1$, $var2$);&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;$key&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;$array&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-asnhk" value="    this-&gt;assertArrayNotHasKey($var1$, $var2$);&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;$key&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;$array&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-ascha" value="    $this-&gt;assertClassHasAttribute($var1$, '$var2$');&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;$attributeName&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;$className&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-asi" value="    $this-&gt;assertInstanceOf($var1$, $var2$);&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;expected&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;actual&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-test" value="    public function test$var1$()&#10;    {&#10;        $END$&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-setup" value="    protected function setUp()&#10;    {&#10;        $END$&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-teardown" value="    protected function tearDown()&#10;    {&#10;        $END$&#10;    }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-exp" value="    expects($this-&gt;$var1$())&#10;        -&gt;method('$var2$')&#10;        -&gt;with($this-&gt;equalTo($var3$)$var4$)&#10;        -&gt;will($this-&gt;returnValue($var5$));&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;once&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var4" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var5" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-testcmt" value="    /**&#10;    * @group $var1$&#10;    */&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-fail" value="    $this-&gt;fail($var1$);&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-marki" value="    $this-&gt;markTestIncomplete($var1$);&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-marks" value="    $this-&gt;markTestSkipped($var1$);&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-te" value="    throw new $var1$(&quot;$var2$&quot;);&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;Exception&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;Error Processing Request&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-fpc" value="    file_put_contents($var1$, $var2$$var3$);$var0$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;file&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;content&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;, FILE_APPEND&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-sr" value="    str_replace($var1$, $var2$, $var3$)$var0$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;search&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;replace&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;subject&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-ia" value="    in_array($var1$, $var2$)$var0$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;needle&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;haystack&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-is" value="    isset($var1$)$var0$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;var&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-isa" value="    isset($$var1$[$var2$])$var0$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;array&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;key&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-in" value="    is_null($$var1$)$var0$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;var&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="p-fe" value="    file_exists($var1$)$var0$&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;file&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="PHP" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+</templateSet>

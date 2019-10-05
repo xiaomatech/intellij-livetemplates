@@ -1,0 +1,70 @@
+<templateSet group="javascript-d3">
+  <template name="d3-.attr" value="    .attr(&quot;$var1$&quot;, $var2$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="d3-.style" value="    .style(&quot;$var1$&quot;, $var2$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="d3-axis" value="    d3.svg.axis()&#10;      .orient($var1$)&#10;      .scale($var2$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="d3-fd" value="    function(d) { $var1$ }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="d3-fdi" value="    function(d, i) { $var1$ }&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="d3-marginconvention" value="    var $var1$ = { top: $var2$, right: $var3$, bottom: $var4$, left: $var5$ };&#10;    var $var6$ = $var7$ - $var1$.left - $var1$.right;&#10;    var $var8$ = $var9$ - $var1$.top - $var1$.bottom;&#10;    &#10;    var $var10$ = d3.select(&quot;$var11$&quot;).append(&quot;svg&quot;)&#10;      .attr(&quot;width&quot;, $var6$ + $var1$.left + $var1$.right)&#10;      .attr(&quot;height&quot;, $var8$ + $var1$.top + $var1$.bottom)&#10;        .append(&quot;g&quot;)&#10;      .attr(&quot;transform&quot;, &quot;translate(&quot; + $var1$.left + &quot;,&quot; + $var1$.top + &quot;)&quot;)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="&quot;margin&quot;" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="&quot;10&quot;" alwaysStopAt="true"/>
+    <variable name="var3" expression="" defaultValue="&quot;10&quot;" alwaysStopAt="true"/>
+    <variable name="var4" expression="" defaultValue="&quot;10&quot;" alwaysStopAt="true"/>
+    <variable name="var5" expression="" defaultValue="&quot;10&quot;" alwaysStopAt="true"/>
+    <variable name="var6" expression="" defaultValue="&quot;width&quot;" alwaysStopAt="true"/>
+    <variable name="var7" expression="" defaultValue="&quot;970&quot;" alwaysStopAt="true"/>
+    <variable name="var8" expression="" defaultValue="&quot;height&quot;" alwaysStopAt="true"/>
+    <variable name="var9" expression="" defaultValue="&quot;500&quot;" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+  <template name="d3-nest" value="    d3.nest()&#10;      .key($var1$)&#10;      .entries($var2$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+      <option name="TypeScript" value="true"/>
+      <option name="JAVA_SCRIPT" value="true"/>
+      <option name="HTML" value="true"/>
+    </context>
+  </template>
+</templateSet>
