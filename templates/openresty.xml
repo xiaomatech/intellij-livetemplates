@@ -1,0 +1,2784 @@
+<templateSet group="openresty">
+  
+  <template name="require resty.balancer" value="local balancer = require &#x22;resty.balancer&#x22;" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="require resty.dns" value="local dns = require &#x22;resty.dns&#x22;" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="class:new" value=" r, err = class:new(opts)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="r:query" value=" answers, err, tries? = r:query(name, options?, tries?)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="r:tcp_query" value=" answers, err = r:tcp_query(name, options?)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="set_timeout" value=" r:set_timeout(time)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="resty.dns.resolver.compress_ipv6_addr" value=" compressed = resty.dns.resolver.compress_ipv6_addr(address)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="resty.dns.resolver.expand_ipv6_addr" value=" expanded = resty.dns.resolver.expand_ipv6_addr(address)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="resty.dns.resolver.arpa_str" value=" arpa_record = resty.dns.resolver.arpa_str(address)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="r:reverse_query" value=" answers, err = r:reverse_query(address)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="TYPE_A" value="TYPE_A" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="TYPE_NS" value="TYPE_NS" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="TYPE_CNAME" value="TYPE_CNAME" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="TYPE_SOA" value="TYPE_SOA" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="TYPE_PTR" value="TYPE_PTR" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="TYPE_MX" value="TYPE_MX" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="TYPE_TXT" value="TYPE_TXT" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="r.TYPE_AAAA" value=" typ = r.TYPE_AAAA" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="r.TYPE_SRV" value=" typ = r.TYPE_SRV" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="r.TYPE_SPF" value=" typ = r.TYPE_SPF" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="r.CLASS_IN" value=" class = r.CLASS_IN" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="r.SECTION_AN" value=" stype = r.SECTION_AN" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="r.SECTION_NS" value=" stype = r.SECTION_NS" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="r.SECTION_AR" value=" stype = r.SECTION_AR" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="require resty.limit.conn" value="local conn = require &#x22;resty.limit.conn&#x22;" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="require resty.limit.count" value="local count = require &#x22;resty.limit.count&#x22;" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+  
+
+  <template name="require resty.limit.req" value="local req = require &#x22;resty.limit.req&#x22;" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+
+
+  <template name="require resty.limit.traffic" value="local traffic = require &#x22;resty.limit.traffic&#x22;" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+
+  <template name="require resty.lock" value="local lock = require &#x22;resty.lock&#x22;" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="lock:new" value=" obj, err = lock:new(dict_name)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="obj:lock" value=" elapsed, err = obj:lock(key)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="obj:unlock" value=" ok, err = obj:unlock()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="obj:expire" value=" ok, err = obj:expire(timeout)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="require resty.logger.socket" value="local socket = require &#x22;resty.logger.socket&#x22;" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="logger.init" value=": ok, err = logger.init(user_config)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="logger.initted" value=": initted = logger.initted()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="logger.log" value=": bytes, err = logger.log(msg)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="logger.flush" value=": bytes, err = logger.flush()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="require resty.lrucache" value="local lrucache = require &#x22;resty.lrucache&#x22;" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="lrucache.new" value=" cache, err = lrucache.new(max_items [, load_factor])" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="set" value=" cache:set(key, value, ttl?, flags?)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="cache:get" value=" data, stale_data, flags = cache:get(key)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="delete" value=" cache:delete(key)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="cache:count" value=" count = cache:count()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="cache:capacity" value=" size = cache:capacity()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="cache:get_keys" value=" keys = cache:get_keys(max_count?, res?)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="flush_all" value=" cache:flush_all()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="require resty.memcached" value="local memcached = require &#x22;resty.memcached&#x22;" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="memcached:new" value=" memc, err = memcached:new(opts?)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="memc:connect" value=" ok, err = memc:connect(host, port)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="memc:set" value=" ok, err = memc:set(key, value, exptime, flags)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="memc:set_timeout" value=" ok, err = memc:set_timeout(time)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="memc:set_keepalive" value=" ok, err = memc:set_keepalive(max_idle_timeout, pool_size)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="memc:get_reused_times" value=" times, err = memc:get_reused_times()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="memc:close" value=" ok, err = memc:close()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="memc:add" value=" ok, err = memc:add(key, value, exptime, flags)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="memc:replace" value=" ok, err = memc:replace(key, value, exptime, flags)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="memc:append" value=" ok, err = memc:append(key, value, exptime, flags)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="memc:prepend" value=" ok, err = memc:prepend(key, value, exptime, flags)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="memc:get" value=" value, flags, err = memc:get(key)syntax: results, err = memc:get(keys)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="memc:gets" value=" value, flags, cas_unique, err = memc:gets(key)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="memc:cas" value=" ok, err = memc:cas(key, value, cas_unique, exptime?, flags?)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="memc:touch" value=" ok, err = memc:touch(key, exptime)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="memc:flush_all" value=" ok, err = memc:flush_all(time?)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="memc:delete" value=" ok, err = memc:delete(key)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="memc:incr" value=" new_value, err = memc:incr(key, delta)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="memc:decr" value=" new_value, err = memc:decr(key, value)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="memc:stats" value=" lines, err = memc:stats(args?)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="memc:version" value=" version, err = memc:version(args?)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="memc:quit" value=" ok, err = memc:quit()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="memc:verbosity" value=" ok, err = memc:verbosity(level)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="require resty.mysql" value="local mysql = require &#x22;resty.mysql&#x22;" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="mysql:new" value=" db, err = mysql:new()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="db:connect" value=" ok, err, errcode, sqlstate = db:connect(options)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="set_timeout" value=" db:set_timeout(time)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="db:set_keepalive" value=" ok, err = db:set_keepalive(max_idle_timeout, pool_size)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="db:get_reused_times" value=" times, err = db:get_reused_times()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="db:close" value=" ok, err = db:close()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="db:send_query" value=" bytes, err = db:send_query(query)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="db:read_result" value=" res, err, errcode, sqlstate = db:read_result()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="db:query" value=" res, err, errcode, sqlstate = db:query(query)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="db:server_ver" value=" str = db:server_ver()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="set_compact_arrays" value=" db:set_compact_arrays(boolean)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="require resty.redis" value="local redis = require &#x22;resty.redis&#x22;" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="redis:new" value=" red, err = redis:new()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="red:connect" value=" ok, err = red:connect(host, port, options_table?)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="set_timeout" value=" red:set_timeout(time)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="set_timeouts" value=" red:set_timeouts(connect_timeout, send_timeout, read_timeout)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="red:set_keepalive" value=" ok, err = red:set_keepalive(max_idle_timeout, pool_size)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="red:get_reused_times" value=" times, err = red:get_reused_times()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="red:close" value=" ok, err = red:close()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="init_pipeline" value=" red:init_pipeline()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="red:commit_pipeline" value=" results, err = red:commit_pipeline()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="cancel_pipeline" value=" red:cancel_pipeline()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="hmset" value=" red:hmset(myhash, field1, value1, field2, value2, ...)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="red:array_to_hash" value=" hash = red:array_to_hash(array)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="red:read_reply" value=" res, err = red:read_reply()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="redis.add_commands" value=" hash = redis.add_commands(cmd_name1, cmd_name2, ...)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="require resty.string" value="local string = require &#x22;resty.string&#x22;" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="require resty.upload" value="local upload = require &#x22;resty.upload&#x22;" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="require resty.upstream.healthcheck" value="local healthcheck = require &#x22;resty.upstream.healthcheck&#x22;" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="require resty.websocket" value="local websocket = require &#x22;resty.websocket&#x22;" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="require tablepool" value="local tablepool = require &#x22;tablepool&#x22;" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="tablepool.fetch" value=" tb = tablepool.fetch(pool_name, narr, nrec)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="tablepool.release" value=" cache, err = tablepool.release(pool_name, tb, [no_clear])" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="require upstream.nginx.module" value="local module = require &#x22;upstream.nginx.module&#x22;" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="upstream.get_upstreams" value=" names = upstream.get_upstreams()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="upstream.get_servers" value=" servers = upstream.get_servers(upstream_name)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="upstream.get_primary_peers" value=" peers = upstream.get_primary_peers(upstream_name)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="upstream.get_backup_peers" value=" peers = upstream.get_backup_peers(upstream_name)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="upstream.set_peer_down" value=" ok, err = upstream.set_peer_down(upstream_name, is_backup, peer_id, down_value)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="upstream.current_upstream_name" value=" name = upstream.current_upstream_name()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.arg" value="val = ngx.arg[index]" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.var.VARIABLE" value="ngx.var.VAR_NAME" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.OK" value="ngx.OK" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.ERROR" value="ngx.ERROR" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.AGAIN" value="ngx.AGAIN" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.DONE" value="ngx.DONE" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.DECLINED" value="ngx.DECLINED" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.HTTP_GET" value="ngx.HTTP_GET" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.HTTP_HEAD" value="ngx.HTTP_HEAD" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.HTTP_PUT" value="ngx.HTTP_PUT" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.HTTP_POST" value="ngx.HTTP_POST" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.HTTP_DELETE" value="ngx.HTTP_DELETE" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.HTTP_OPTIONS" value="ngx.HTTP_OPTIONS" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.HTTP_MKCOL" value="ngx.HTTP_MKCOL" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.HTTP_COPY" value="ngx.HTTP_COPY" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.HTTP_MOVE" value="ngx.HTTP_MOVE" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.HTTP_PROPFIND" value="ngx.HTTP_PROPFIND" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.HTTP_PROPPATCH" value="ngx.HTTP_PROPPATCH" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.HTTP_LOCK" value="ngx.HTTP_LOCK" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.HTTP_UNLOCK" value="ngx.HTTP_UNLOCK" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.HTTP_PATCH" value="ngx.HTTP_PATCH" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.HTTP_TRACE" value="ngx.HTTP_TRACE" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="value = ngx.HTTP_CONTINUE" value="value = ngx.HTTP_CONTINUE" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="value = ngx.HTTP_SWITCHING_PROTOCOLS" value="value = ngx.HTTP_SWITCHING_PROTOCOLS" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="value = ngx.HTTP_OK" value="value = ngx.HTTP_OK" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="value = ngx.HTTP_CREATED" value="value = ngx.HTTP_CREATED" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="value = ngx.HTTP_ACCEPTED" value="value = ngx.HTTP_ACCEPTED" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="value = ngx.HTTP_NO_CONTENT" value="value = ngx.HTTP_NO_CONTENT" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="value = ngx.HTTP_PARTIAL_CONTENT" value="value = ngx.HTTP_PARTIAL_CONTENT" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="value = ngx.HTTP_SPECIAL_RESPONSE" value="value = ngx.HTTP_SPECIAL_RESPONSE" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="value = ngx.HTTP_MOVED_PERMANENTLY" value="value = ngx.HTTP_MOVED_PERMANENTLY" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="value = ngx.HTTP_MOVED_TEMPORARILY" value="value = ngx.HTTP_MOVED_TEMPORARILY" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="value = ngx.HTTP_SEE_OTHER" value="value = ngx.HTTP_SEE_OTHER" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="value = ngx.HTTP_NOT_MODIFIED" value="value = ngx.HTTP_NOT_MODIFIED" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="value = ngx.HTTP_TEMPORARY_REDIRECT" value="value = ngx.HTTP_TEMPORARY_REDIRECT" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="value = ngx.HTTP_PERMANENT_REDIRECT" value="value = ngx.HTTP_PERMANENT_REDIRECT" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="value = ngx.HTTP_BAD_REQUEST" value="value = ngx.HTTP_BAD_REQUEST" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="value = ngx.HTTP_UNAUTHORIZED" value="value = ngx.HTTP_UNAUTHORIZED" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="value = ngx.HTTP_PAYMENT_REQUIRED" value="value = ngx.HTTP_PAYMENT_REQUIRED" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="value = ngx.HTTP_FORBIDDEN" value="value = ngx.HTTP_FORBIDDEN" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="value = ngx.HTTP_NOT_FOUND" value="value = ngx.HTTP_NOT_FOUND" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="value = ngx.HTTP_NOT_ALLOWED" value="value = ngx.HTTP_NOT_ALLOWED" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="value = ngx.HTTP_NOT_ACCEPTABLE" value="value = ngx.HTTP_NOT_ACCEPTABLE" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="value = ngx.HTTP_REQUEST_TIMEOUT" value="value = ngx.HTTP_REQUEST_TIMEOUT" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="value = ngx.HTTP_CONFLICT" value="value = ngx.HTTP_CONFLICT" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="value = ngx.HTTP_GONE" value="value = ngx.HTTP_GONE" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="value = ngx.HTTP_UPGRADE_REQUIRED" value="value = ngx.HTTP_UPGRADE_REQUIRED" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="value = ngx.HTTP_TOO_MANY_REQUESTS" value="value = ngx.HTTP_TOO_MANY_REQUESTS" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="value = ngx.HTTP_CLOSE" value="value = ngx.HTTP_CLOSE" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="value = ngx.HTTP_ILLEGAL" value="value = ngx.HTTP_ILLEGAL" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="value = ngx.HTTP_INTERNAL_SERVER_ERROR" value="value = ngx.HTTP_INTERNAL_SERVER_ERROR" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="value = ngx.HTTP_METHOD_NOT_IMPLEMENTED" value="value = ngx.HTTP_METHOD_NOT_IMPLEMENTED" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="value = ngx.HTTP_BAD_GATEWAY" value="value = ngx.HTTP_BAD_GATEWAY" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="value = ngx.HTTP_SERVICE_UNAVAILABLE" value="value = ngx.HTTP_SERVICE_UNAVAILABLE" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="value = ngx.HTTP_GATEWAY_TIMEOUT" value="value = ngx.HTTP_GATEWAY_TIMEOUT" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="value = ngx.HTTP_VERSION_NOT_SUPPORTED" value="value = ngx.HTTP_VERSION_NOT_SUPPORTED" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="value = ngx.HTTP_INSUFFICIENT_STORAGE" value="value = ngx.HTTP_INSUFFICIENT_STORAGE" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.STDERR" value="ngx.STDERR" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.EMERG" value="ngx.EMERG" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.ALERT" value="ngx.ALERT" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.CRIT" value="ngx.CRIT" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.ERR" value="ngx.ERR" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.WARN" value="ngx.WARN" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.NOTICE" value="ngx.NOTICE" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.INFO" value="ngx.INFO" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.DEBUG" value="ngx.DEBUG" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="print" value="print(...)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.ctx" value="init_worker_by_lua*, set_by_lua*, rewrite_by_lua*, access_by_lua*, content_by_lua*, header_filter_by_lua*, body_filter_by_lua*, log_by_lua*, ngx.timer.*, balancer_by_lua*" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.location.capture" value="res = ngx.location.capture(uri, options?)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.location.capture_multi" value="res1, res2, ... = ngx.location.capture_multi({ {uri, options?}, {uri, options?}, ... })" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.status" value="set_by_lua*, rewrite_by_lua*, access_by_lua*, content_by_lua*, header_filter_by_lua*, body_filter_by_lua*, log_by_lua*" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.header.HEADER" value="ngx.header.HEADER = VALUE" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.resp.get_headers" value="headers, err = ngx.resp.get_headers(max_headers?, raw?)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.req.is_internal" value="is_internal = ngx.req.is_internal()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.req.start_time" value="secs = ngx.req.start_time()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.req.http_version" value="num = ngx.req.http_version()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.req.raw_header" value="str = ngx.req.raw_header(no_request_line?)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.req.get_method" value="method_name = ngx.req.get_method()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.req.set_method" value="ngx.req.set_method(method_id)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.req.set_uri" value="ngx.req.set_uri(uri, jump?)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.req.set_uri_args" value="ngx.req.set_uri_args(args)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.req.get_uri_args" value="args, err = ngx.req.get_uri_args(max_args?)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.req.get_post_args" value="args, err = ngx.req.get_post_args(max_args?)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.req.get_headers" value="headers, err = ngx.req.get_headers(max_headers?, raw?)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.req.set_header" value="ngx.req.set_header(header_name, header_value)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.req.clear_header" value="ngx.req.clear_header(header_name)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.req.read_body" value="ngx.req.read_body()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.req.discard_body" value="ngx.req.discard_body()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.req.get_body_data" value="data = ngx.req.get_body_data()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.req.get_body_file" value="file_name = ngx.req.get_body_file()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.req.set_body_data" value="ngx.req.set_body_data(data)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.req.set_body_file" value="ngx.req.set_body_file(file_name, auto_clean?)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.req.init_body" value="ngx.req.init_body(buffer_size?)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.req.append_body" value="ngx.req.append_body(data_chunk)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.req.finish_body" value="ngx.req.finish_body()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.req.socket" value="tcpsock, err = ngx.req.socket()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.exec" value="ngx.exec(uri, args?)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.redirect" value="ngx.redirect(uri, status?)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.send_headers" value="ok, err = ngx.send_headers()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.headers_sent" value="value = ngx.headers_sent" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.print" value="ok, err = ngx.print(...)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.say" value="ok, err = ngx.say(...)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.log" value="ngx.log(log_level, ...)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.flush" value="ok, err = ngx.flush(wait?)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.exit" value="ngx.exit(status)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.eof" value="ok, err = ngx.eof()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.sleep" value="ngx.sleep(seconds)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.escape_uri" value="newstr = ngx.escape_uri(str)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.unescape_uri" value="newstr = ngx.unescape_uri(str)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.encode_args" value="str = ngx.encode_args(table)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.decode_args" value="table, err = ngx.decode_args(str, max_args?)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.encode_base64" value="newstr = ngx.encode_base64(str, no_padding?)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.decode_base64" value="newstr = ngx.decode_base64(str)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.crc32_short" value="intval = ngx.crc32_short(str)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.crc32_long" value="intval = ngx.crc32_long(str)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.hmac_sha1" value="digest = ngx.hmac_sha1(secret_key, str)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.md5" value="digest = ngx.md5(str)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.md5_bin" value="digest = ngx.md5_bin(str)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.sha1_bin" value="digest = ngx.sha1_bin(str)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.quote_sql_str" value="quoted_value = ngx.quote_sql_str(raw_value)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.today" value="str = ngx.today()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.time" value="secs = ngx.time()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.now" value="secs = ngx.now()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.update_time" value="ngx.update_time()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.localtime" value="str = ngx.localtime()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.utctime" value="str = ngx.utctime()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.cookie_time" value="str = ngx.cookie_time(sec)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.http_time" value="str = ngx.http_time(sec)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.parse_http_time" value="sec = ngx.parse_http_time(str)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.is_subrequest" value="value = ngx.is_subrequest" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.re.match" value="captures, err = ngx.re.match(subject, regex, options?, ctx?, res_table?)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.re.find" value="from, to, err = ngx.re.find(subject, regex, options?, ctx?, nth?)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.re.gmatch" value="iterator, err = ngx.re.gmatch(subject, regex, options?)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.re.sub" value="newstr, n, err = ngx.re.sub(subject, regex, replace, options?)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.re.gsub" value="newstr, n, err = ngx.re.gsub(subject, regex, replace, options?)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.shared.DICT" value="dict = ngx.shared.DICT" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.shared.DICT.get" value="value, flags = ngx.shared.DICT:get(key)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.shared.DICT.get_stale" value="value, flags, stale = ngx.shared.DICT:get_stale(key)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.shared.DICT.set" value="success, err, forcible = ngx.shared.DICT:set(key, value, exptime?, flags?)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.shared.DICT.safe_set" value="ok, err = ngx.shared.DICT:safe_set(key, value, exptime?, flags?)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.shared.DICT.add" value="success, err, forcible = ngx.shared.DICT:add(key, value, exptime?, flags?)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.shared.DICT.safe_add" value="ok, err = ngx.shared.DICT:safe_add(key, value, exptime?, flags?)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.shared.DICT.replace" value="success, err, forcible = ngx.shared.DICT:replace(key, value, exptime?, flags?)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.shared.DICT.delete" value="ngx.shared.DICT:delete(key)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.shared.DICT.incr" value="newval, err, forcible? = ngx.shared.DICT:incr(key, value, init?, init_ttl?)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.shared.DICT.lpush" value="length, err = ngx.shared.DICT:lpush(key, value)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.shared.DICT.rpush" value="length, err = ngx.shared.DICT:rpush(key, value)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.shared.DICT.lpop" value="val, err = ngx.shared.DICT:lpop(key)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.shared.DICT.rpop" value="val, err = ngx.shared.DICT:rpop(key)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.shared.DICT.llen" value="len, err = ngx.shared.DICT:llen(key)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.shared.DICT.ttl" value="ttl, err = ngx.shared.DICT:ttl(key)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.shared.DICT.expire" value="success, err = ngx.shared.DICT:expire(key, exptime)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.shared.DICT.flush_all" value="ngx.shared.DICT:flush_all()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.shared.DICT.flush_expired" value="flushed = ngx.shared.DICT:flush_expired(max_count?)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.shared.DICT.get_keys" value="keys = ngx.shared.DICT:get_keys(max_count?)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.shared.DICT.capacity" value="capacity_bytes = ngx.shared.DICT:capacity()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.shared.DICT.free_space" value="free_page_bytes = ngx.shared.DICT:free_space()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.socket.udp" value="udpsock = ngx.socket.udp()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="udpsock:setpeername" value="ok, err = udpsock:setpeername(host, port)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="udpsock:send" value="ok, err = udpsock:send(data)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="udpsock:receive" value="data, err = udpsock:receive(size?)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="udpsock:close" value="ok, err = udpsock:close()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="udpsock:settimeout" value="udpsock:settimeout(time)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.socket.tcp" value="tcpsock = ngx.socket.tcp()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="tcpsock:connect" value="ok, err = tcpsock:connect(host, port, options_table?)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="tcpsock:sslhandshake" value="session, err = tcpsock:sslhandshake(reused_session?, server_name?, ssl_verify?, send_status_req?)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="tcpsock:send" value="bytes, err = tcpsock:send(data)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="tcpsock:receive" value="data, err, partial = tcpsock:receive(size)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="tcpsock:receiveany" value="data, err = tcpsock:receiveany(max)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="tcpsock:receiveuntil" value="iterator = tcpsock:receiveuntil(pattern, options?)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="tcpsock:close" value="ok, err = tcpsock:close()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="tcpsock:settimeout" value="tcpsock:settimeout(time)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="tcpsock:settimeouts" value="tcpsock:settimeouts(connect_timeout, send_timeout, read_timeout)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="tcpsock:setoption" value="tcpsock:setoption(option, value?)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="tcpsock:setkeepalive" value="ok, err = tcpsock:setkeepalive(timeout?, size?)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="tcpsock:getreusedtimes" value="count, err = tcpsock:getreusedtimes()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.socket.connect" value="tcpsock, err = ngx.socket.connect(host, port)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.get_phase" value="str = ngx.get_phase()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.thread.spawn" value="co = ngx.thread.spawn(func, arg1, arg2, ...)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.thread.wait" value="ok, res1, res2, ... = ngx.thread.wait(thread1, thread2, ...)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.thread.kill" value="ok, err = ngx.thread.kill(thread)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.on_abort" value="ok, err = ngx.on_abort(callback)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.timer.at" value="hdl, err = ngx.timer.at(delay, callback, user_arg1, user_arg2, ...)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.timer.every" value="hdl, err = ngx.timer.every(delay, callback, user_arg1, user_arg2, ...)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.timer.running_count" value="count = ngx.timer.running_count()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.timer.pending_count" value="count = ngx.timer.pending_count()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.config.subsystem" value="subsystem = ngx.config.subsystem" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.config.debug" value="debug = ngx.config.debug" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.config.prefix" value="prefix = ngx.config.prefix()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.config.nginx_version" value="ver = ngx.config.nginx_version" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.config.nginx_configure" value="str = ngx.config.nginx_configure()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.config.ngx_lua_version" value="ver = ngx.config.ngx_lua_version" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.worker.exiting" value="exiting = ngx.worker.exiting()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.worker.pid" value="pid = ngx.worker.pid()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.worker.count" value="count = ngx.worker.count()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.worker.id" value="count = ngx.worker.id()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.semaphore" value="local semaphore = require &#x22;ngx.semaphore&#x22;" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.balancer" value="local balancer = require &#x22;ngx.balancer&#x22;" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.ssl" value="local ssl = require &#x22;ngx.ssl&#x22;" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ngx.ocsp" value="local ocsp = require &#x22;ngx.ocsp&#x22;" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ndk.set_var.DIRECTIVE" value="res = ndk.set_var.DIRECTIVE_NAME" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="coroutine.create" value="co = coroutine.create(f)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="coroutine.resume" value="ok, ... = coroutine.resume(co, ...)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="coroutine.yield" value="... = coroutine.yield(...)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="coroutine.wrap" value="co = coroutine.wrap(f)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="coroutine.running" value="co = coroutine.running()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="coroutine.status" value="status = coroutine.status(co)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="local cjson = require &#x22;cjson&#x22;" value="local cjson = require &#x22;cjson&#x22;" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="local cjson2 = cjson.new()" value="local cjson2 = cjson.new()" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="local cjson_safe = require &#x22;cjson.safe&#x22;" value="local cjson_safe = require &#x22;cjson.safe&#x22;" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="text = cjson.encode(value)" value="text = cjson.encode(value)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="value = cjson.decode(text)" value="value = cjson.decode(text)" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="setting = cjson.decode_invalid_numbers([setting])" value="setting = cjson.decode_invalid_numbers([setting])" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="setting = cjson.encode_invalid_numbers([setting])" value="setting = cjson.encode_invalid_numbers([setting])" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="keep = cjson.encode_keep_buffer([keep])" value="keep = cjson.encode_keep_buffer([keep])" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="depth = cjson.encode_max_depth([depth])" value="depth = cjson.encode_max_depth([depth])" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="depth = cjson.decode_max_depth([depth])" value="depth = cjson.decode_max_depth([depth])" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="convert, ratio, safe = cjson.encode_sparse_array([convert[, ratio[, safe]]])" value="convert, ratio, safe = cjson.encode_sparse_array([convert[, ratio[, safe]]])" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="lua_load_resty_core" value="lua_load_resty_core on|off" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="lua_capture_error_log" value="lua_capture_error_log size" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="lua_use_default_type" value="lua_use_default_type on | off" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="lua_malloc_trim" value="lua_malloc_trim <request-count>" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="lua_code_cache" value="lua_code_cache on | off" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="lua_regex_cache_max_entries" value="lua_regex_cache_max_entries <num>" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="lua_regex_match_limit" value="lua_regex_match_limit <num>" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="lua_package_path" value="lua_package_path <lua-style-path-str>" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="lua_package_cpath" value="lua_package_cpath <lua-style-cpath-str>" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="init_by_lua" value="init_by_lua <lua-script-str>" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="init_by_lua_block" value="init_by_lua_block { lua-script }" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="init_by_lua_file" value="init_by_lua_file <path-to-lua-script-file>" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="init_worker_by_lua" value="init_worker_by_lua <lua-script-str>" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="init_worker_by_lua_block" value="init_worker_by_lua_block { lua-script }" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="init_worker_by_lua_file" value="init_worker_by_lua_file <lua-file-path>" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="set_by_lua" value="set_by_lua $res <lua-script-str> [$arg1 $arg2 ...]" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="set_by_lua_block" value="set_by_lua_block $res { lua-script }" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="set_by_lua_file" value="set_by_lua_file $res <path-to-lua-script-file> [$arg1 $arg2 ...]" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="content_by_lua" value="content_by_lua <lua-script-str>" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="content_by_lua_block" value="content_by_lua_block { lua-script }" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="content_by_lua_file" value="content_by_lua_file <path-to-lua-script-file>" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="rewrite_by_lua" value="rewrite_by_lua <lua-script-str>" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="rewrite_by_lua_block" value="rewrite_by_lua_block { lua-script }" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="rewrite_by_lua_file" value="rewrite_by_lua_file <path-to-lua-script-file>" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="access_by_lua" value="access_by_lua <lua-script-str>" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="access_by_lua_block" value="access_by_lua_block { lua-script }" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="access_by_lua_file" value="access_by_lua_file <path-to-lua-script-file>" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="header_filter_by_lua" value="header_filter_by_lua <lua-script-str>" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="header_filter_by_lua_block" value="header_filter_by_lua_block { lua-script }" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="header_filter_by_lua_file" value="header_filter_by_lua_file <path-to-lua-script-file>" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="body_filter_by_lua" value="body_filter_by_lua <lua-script-str>" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="body_filter_by_lua_block" value="body_filter_by_lua_block { lua-script-str }" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="body_filter_by_lua_file" value="body_filter_by_lua_file <path-to-lua-script-file>" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="log_by_lua" value="log_by_lua <lua-script-str>" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="log_by_lua_block" value="log_by_lua_block { lua-script }" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="log_by_lua_file" value="log_by_lua_file <path-to-lua-script-file>" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="balancer_by_lua_block" value="balancer_by_lua_block { lua-script }" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="balancer_by_lua_file" value="balancer_by_lua_file <path-to-lua-script-file>" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="lua_need_request_body" value="lua_need_request_body <on|off>" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ssl_certificate_by_lua_block" value="ssl_certificate_by_lua_block { lua-script }" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ssl_certificate_by_lua_file" value="ssl_certificate_by_lua_file <path-to-lua-script-file>" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ssl_session_fetch_by_lua_block" value="ssl_session_fetch_by_lua_block { lua-script }" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ssl_session_fetch_by_lua_file" value="ssl_session_fetch_by_lua_file <path-to-lua-script-file>" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ssl_session_store_by_lua_block" value="ssl_session_store_by_lua_block { lua-script }" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="ssl_session_store_by_lua_file" value="ssl_session_store_by_lua_file <path-to-lua-script-file>" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="lua_shared_dict" value="lua_shared_dict <name> <size>" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="lua_socket_connect_timeout" value="lua_socket_connect_timeout <time>" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="lua_socket_send_timeout" value="lua_socket_send_timeout <time>" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="lua_socket_send_lowat" value="lua_socket_send_lowat <size>" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="lua_socket_read_timeout" value="lua_socket_read_timeout <time>" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="lua_socket_buffer_size" value="lua_socket_buffer_size <size>" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="lua_socket_pool_size" value="lua_socket_pool_size <size>" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="lua_socket_keepalive_timeout" value="lua_socket_keepalive_timeout <time>" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="lua_socket_log_errors" value="lua_socket_log_errors on|off" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="lua_ssl_ciphers" value="lua_ssl_ciphers <ciphers>" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="lua_ssl_crl" value="lua_ssl_crl <file>" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="lua_ssl_protocols" value="lua_ssl_protocols [SSLv2] [SSLv3] [TLSv1] [TLSv1.1] [TLSv1.2] [TLSv1.3]" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="lua_ssl_trusted_certificate" value="lua_ssl_trusted_certificate <file>" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="lua_ssl_verify_depth" value="lua_ssl_verify_depth <number>" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="lua_http10_buffering" value="lua_http10_buffering on|off" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="rewrite_by_lua_no_postpone" value="rewrite_by_lua_no_postpone on|off" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="access_by_lua_no_postpone" value="access_by_lua_no_postpone on|off" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="lua_transform_underscores_in_response_headers" value="lua_transform_underscores_in_response_headers on|off" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="lua_check_client_abort" value="lua_check_client_abort on|off" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="lua_max_pending_timers" value="lua_max_pending_timers <count>" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="lua_max_running_timers" value="lua_max_running_timers <count>" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+
+  <template name="lua_sa_restart" value="lua_sa_restart on|off" description="" toReformat="true" toShortenFQNames="true">
+      <context>
+          <option name="lua" value="true"/>
+      </context>
+  </template>
+
+</templateSet>
